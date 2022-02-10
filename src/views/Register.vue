@@ -17,6 +17,9 @@
     <br>
     <label for="confPassword">Confirm Password:</label>
     <input type="text" style="margin:10px" value="Confirm Password">
+    <br>
+    <button type="submit" style="margin:10px">Go Back</button>
+    <button type="submit" style="margin:10px">Submit</button>
 </form>
 </template>
 
