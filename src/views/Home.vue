@@ -1,8 +1,8 @@
 <template>
   <form>
-    <button type="button" style="margin:15px">Sign Out</button>
-    <button type="button" style="margin:15px">User Details</button>
-    <button type="button" style="margin:15px">User Management</button>
+    <button type="submit" style="margin:15px">Sign Out</button>
+    <button type="submit" style="margin:15px">User Details</button>
+    <button type="submit" style="margin:15px">User Management</button>
   </form>
   
 </template>
