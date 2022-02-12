@@ -4,19 +4,19 @@
 <p>Please Enter Your Information Below:</p>
 <form>
     <label for="firstName">First Name:</label>
-    <input type="text" style="margin:10px" value="First Name">
+    <input type="text" style="margin:10px">
     <br>
     <label for="lastName">Last Name:</label>
-    <input type="text" style="margin:10px" value="Last Name">
+    <input type="text" style="margin:10px">
     <br>
     <label for="email">Email</label>
-    <input type="text" style="margin:10px" value="Email">
+    <input type="text" style="margin:10px">
     <br>
     <label for="password">Password:</label>
-    <input type="text" style="margin:10px" value="Password">
+    <input type="text" style="margin:10px">
     <br>
     <label for="confPassword">Confirm Password:</label>
-    <input type="text" style="margin:10px" value="Confirm Password">
+    <input type="text" style="margin:10px">
     <br>
     <button type="submit" style="margin:10px">Go Back</button>
     <button type="submit" style="margin:10px">Submit</button>
