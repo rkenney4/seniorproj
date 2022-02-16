@@ -1,10 +1,12 @@
 <template>
-    <link rel="stylesheet" href="./SeniorProj/views/Home.css">
+    <body>
     <form class="home">
     <button class="btn-1" type="submit" style="margin:15px">Sign Out</button>
     <button class="btn-2" type="submit" style="margin:15px">User Details</button>
     <button class="btn-3" type="submit" style="margin:15px">User Management</button>
   </form>
+    </body>
+    
   
 </template>
 
@@ -19,3 +21,29 @@ export default {
   },
 };
 </script>
+
+ <style scoped>
+      body
+      {
+        background-color: chocolate;
+        
+      }
+     .btn-1
+     {
+       background-color: aqua;
+       font-family: 'Courier New', Courier, monospace;
+     }
+
+     .btn-2
+     {
+        background-color: yellowgreen;
+        font-family: 'Courier New', Courier, monospace;
+
+     }
+
+     .btn-3
+     {
+        background-color: lightsalmon;
+        font-family: 'Courier New', Courier, monospace;
+     }
+   </style>
