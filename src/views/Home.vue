@@ -1,22 +1,22 @@
 <template>
   <head>
   </head>
-    <body>
+  <body>
     <img src="../assets/OU-Logo.jpg" alt="OU-Logo" width="200" height="150">
-    
-  <h1>
-    <b>Welcome to our Quality Assurance Management Team!</b>
-  </h1>
+  
+    <h1>
+      <b>Welcome to our Quality Assurance Management Team!</b>
+    </h1>
 
-  <p>
-    Team members: Joey, Saliel, Sarah, Maurice, and Richard
-  </p>
-  <form class="home">
-    <button class="btn-1" type="submit" style="margin:15px">Sign Out</button>
-    <button class="btn-2" type="submit" style="margin:15px">User Details</button>
-    <button class="btn-3" type="submit" style="margin:15px">User Management</button>
-  </form>
-    </body>
+    <p>
+      Team members: Joey, Saliel, Sarah, Maurice, and Richard
+    </p>
+    <form class="home">
+      <button class="btn-1" type="submit" style="margin:15px">Sign Out</button>
+      <button class="btn-2" type="submit" style="margin:15px">User Details</button>
+      <button class="btn-3" type="submit" style="margin:15px">User Management</button>
+    </form>
+  </body>
 
 
 </template>
@@ -34,27 +34,22 @@ export default {
 </script>
 
 <style scoped>
-  body
-  {
+  h1 {
     background-color: black;
-    height: 100%;
   }
-  .btn-1
-  {
-  background-color: aqua;
+  .btn-1 {
+  background-color: goldenrod;
   font-family: 'Courier New', Courier, monospace;
   }
 
-  .btn-2
-  {
-    background-color: yellowgreen;
+  .btn-2 {
+    background-color: goldenrod;
     font-family: 'Courier New', Courier, monospace;
 
   }
 
-  .btn-3
-  {
-    background-color: lightsalmon;
+  .btn-3 {
+    background-color: goldenrod;
     font-family: 'Courier New', Courier, monospace;
   }
 
