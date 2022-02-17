@@ -1,5 +1,5 @@
 <template>
-    <button>Super Admin Only</button>
+    <p>Super Admin Only</p>
     <h1>Users</h1>
     <table>
         <th>User 1:</th>

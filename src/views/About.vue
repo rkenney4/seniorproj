@@ -2,7 +2,7 @@
   <p>Details</p>
   <h1>Details</h1>
   <button type="submit" style="margin:30px">Logout</button>
-  <form>
+  <form class="about">
     <label for="fName">First Name: </label>
     <input type="text">
     <br>
