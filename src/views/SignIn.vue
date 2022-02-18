@@ -1,18 +1,21 @@
 <template>
-<p>Login</p>
-<p>Please login below:</p>
-<form>
-    <label for="email">Email: </label>
-    <input type="text" value="Email">
-    <br>
-    <br>
-    <label for="password">Password: </label>
-    <input type="text" value="Password">
-    <br>
-    <br>
-    <button type="submit" style="margin:20px">Submit</button>
-    <button type="submit" style="margin:20px">Create Account</button>
-</form>
+<body>
+    <p>Login</p>
+    <p>Please login below:</p>
+    <form>
+        <label class="email" for="email">Email:</label>
+        <input type="text">
+        <br>
+        <br>
+        <label class="password" for="password"><b>Password:</b></label>
+        <input type="text">
+        <br>
+        <br>
+        <button type="submit" style="margin:20px">Submit</button>
+        <button type="submit" style="margin:20px">Create Account</button>
+    </form>
+</body>
+
 </template>
 
 <script setup>
@@ -56,3 +59,27 @@ const signInWithGoogle = () => {
 
 }
 </script>
+
+<style scoped>
+    body
+    {
+        background-color: orange;
+        height: 100%;
+    }
+
+    .email
+    {
+        color: blue;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 100%;
+        background-color: chocolate;
+    }
+
+    .password
+    {
+        color: darkolivegreen;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 100%;
+        background-color: yellow;
+    }
+</style>
