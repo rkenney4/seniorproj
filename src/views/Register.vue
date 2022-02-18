@@ -18,7 +18,7 @@
     <label for="confPassword">Confirm Password:</label>
     <input type="text" style="margin:10px">
     <br>
-    <button type="submit" style="margin:10px">Go Back</button>
+    <router-link to="/sign-in">Go Back</router-link>
     <button type="submit" style="margin:10px">Submit</button>
 </form>
 </template>

@@ -11,8 +11,8 @@
         <input type="text">
         <br>
         <br>
-        <button type="submit" style="margin:20px">Submit</button>
-        <button type="submit" style="margin:20px">Create Account</button>
+        <button type="submit" style="margin:20px"><router-link to="/sign-in">Login</router-link> </button>
+        <button type="submit" style="margin:20px"><router-link to="/register">Register</router-link></button>
     </form>
 </body>
 

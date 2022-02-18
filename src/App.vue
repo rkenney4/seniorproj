@@ -1,12 +1,14 @@
+
 <template>
+
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">Details</router-link> |
+    <router-link to="/about">User Details</router-link> |
     <router-link to="/feed">User Management</router-link> |
     <router-link to="/register">Register</router-link> |
     <router-link to="/sign-in">Login</router-link> 
-    <button @click="handleSignOut">Sign Out</button>
   </div>
+  
   <router-view />
 </template>
 
