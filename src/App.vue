@@ -13,6 +13,10 @@
 
 
 <style>
+body
+{
+    background-color: lightblue;
+}
 #app {
   font-family: 'Courier New', Courier, monospace;
   -webkit-font-smoothing: antialiased;

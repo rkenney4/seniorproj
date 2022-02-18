@@ -9,7 +9,15 @@
         <th>|</th>
         <th>Last Name</th>
         <th>|</th>
+
         <th>Role</th>
+        <th>
+            <select>
+                <option></option>
+              <option>Admin</option>
+              <option>Super Admin</option>
+           </select>
+        </th>
         <th>|</th>
         <th>Active</th>
     </table>
@@ -23,6 +31,12 @@
         <th>Last Name</th>
         <th>|</th>
         <th>Role</th>
+        <th>
+            <select>
+              <option>Admin</option>
+              <option>Super Admin</option>
+           </select>
+        </th>
         <th>|</th>
         <th>Active</th>
     </table>
@@ -36,6 +50,12 @@
         <th>Last Name</th>
         <th>|</th>
         <th>Role</th>
+        <th>
+            <select>
+              <option>Admin</option>
+              <option>Super Admin</option>
+           </select>
+        </th>
         <th>|</th>
         <th>Active</th>
     </table>

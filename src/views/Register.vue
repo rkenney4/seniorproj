@@ -4,19 +4,19 @@
 <p>Please Enter Your Information Below:</p>
 <form>
     <label for="firstName">First Name:</label>
-    <input type="text" style="margin:10px">
+    <input type="text" style="margin:10px" required>
     <br>
     <label for="lastName">Last Name:</label>
-    <input type="text" style="margin:10px">
+    <input type="text" style="margin:10px" required>
     <br>
     <label for="email">Email</label>
-    <input type="text" style="margin:10px">
+    <input type="text" style="margin:10px" required>
     <br>
     <label for="password">Password:</label>
-    <input type="text" style="margin:10px">
+    <input type="password" style="margin:10px" required>
     <br>
     <label for="confPassword">Confirm Password:</label>
-    <input type="text" style="margin:10px">
+    <input type="password" style="margin:10px" required>
     <br>
     <button type="submit" style="margin:10px">Go Back</button>
     <button type="submit" style="margin:10px">Submit</button>
@@ -47,3 +47,14 @@ const signInWithGoogle = () => {
 
 }
 </script>
+
+<style scoped>
+    h2
+    {
+        color: yellow;
+        background-color: green;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 5vh;
+        padding: 2vh;
+    }
+</style>

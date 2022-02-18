@@ -55,7 +55,7 @@ export default {
   }
 
   p {
-  color: white;
+    color: snow;
   }
 
   h1 {
