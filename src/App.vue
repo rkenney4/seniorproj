@@ -13,6 +13,14 @@
 
 
 <style>
+/*
+This applies to the entire page
+body {
+  background-color: black;
+}
+*/
+
+
 #app {
   font-family: 'Courier New', Courier, monospace;
   -webkit-font-smoothing: antialiased;
@@ -31,6 +39,6 @@
 }
 
 #nav a.router-link-exact-active {
-  color: goldenrod;
+  color: #9b8449;
 }
 </style>

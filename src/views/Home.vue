@@ -38,18 +38,18 @@ export default {
     background-color: black;
   }
   .btn-1 {
-  background-color: goldenrod;
+  background-color: #9b8449;
   font-family: 'Courier New', Courier, monospace;
   }
 
   .btn-2 {
-    background-color: goldenrod;
+    background-color: #9b8449;
     font-family: 'Courier New', Courier, monospace;
 
   }
 
   .btn-3 {
-    background-color: goldenrod;
+    background-color: #9b8449;
     font-family: 'Courier New', Courier, monospace;
   }
 
@@ -58,6 +58,6 @@ export default {
   }
 
   h1 {
-  color: goldenrod;
+  color: #9b8449;
   }
 </style>
