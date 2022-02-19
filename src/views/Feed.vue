@@ -1,8 +1,7 @@
 <template>
-    <p>Super Admin Only</p>
-    <h1>Users</h1>
+    <h1><u>Users</u></h1>
     <form>
-        <th>User 1:</th>
+        <th><b>User 1:</b></th>
         <th>Email</th>
         <th>|</th>
         <th>First Name</th>
@@ -14,7 +13,8 @@
         <th>
             <select>
               <option>Admin</option>
-              <option>Super Admin</option>
+              <option>Tester</option>
+              <option>Unassigned</option>
            </select>
         </th>
         <th>|</th>
@@ -22,7 +22,7 @@
     </form>
     <br>
     <form>
-        <th>User 2:</th>
+        <th><b>User 2:</b></th>
         <th>Email</th>
         <th>|</th>
         <th>First Name</th>
@@ -33,7 +33,8 @@
         <th>
             <select>
               <option>Admin</option>
-              <option>Super Admin</option>
+              <option>Tester</option>
+              <option>Unassigned</option>
            </select>
         </th>
         <th>|</th>
@@ -41,7 +42,7 @@
     </form>
     <br>
     <form>
-        <th>User 3:</th>
+        <th><b>User 3:</b></th>
         <th>Email</th>
         <th>|</th>
         <th>First Name</th>
@@ -52,7 +53,8 @@
         <th>
             <select>
               <option>Admin</option>
-              <option>Super Admin</option>
+              <option>Tester</option>
+              <option>Unassigned</option>
            </select>
         </th>
         <th>|</th>
@@ -63,5 +65,9 @@
 </template>
 
 <style scoped>
-
+    th
+    {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 10vh;
+    }
 </style>>

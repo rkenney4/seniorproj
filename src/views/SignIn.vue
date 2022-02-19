@@ -1,9 +1,8 @@
 <template>
 <body>
-    <p>Login</p>
-    <p>Please login below:</p>
+    <h1><b><u>Login</u></b></h1>
     <form>
-        <label class="email" for="email">Email:</label>
+        <label class="email" for="email"><b>Email:</b></label>
         <input type="text">
         <br>
         <br>
@@ -61,25 +60,22 @@ const signInWithGoogle = () => {
 </script>
 
 <style scoped>
+
+   
     body
     {
-        background-color: orange;
         height: 100%;
     }
 
     .email
     {
-        color: blue;
         font-family: 'Times New Roman', Times, serif;
         font-size: 100%;
-        background-color: chocolate;
     }
 
     .password
     {
-        color: darkolivegreen;
         font-family: 'Times New Roman', Times, serif;
         font-size: 100%;
-        background-color: yellow;
     }
 </style>

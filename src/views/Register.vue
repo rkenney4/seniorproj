@@ -1,6 +1,5 @@
 <template>
 <h2>Create Account</h2>
-<h1>Welcome</h1>
 <p>Please Enter Your Information Below:</p>
 <form>
     <label for="firstName">First Name:</label>
@@ -49,10 +48,17 @@ const signInWithGoogle = () => {
 </script>
 
 <style scoped>
+
+    p
+    {
+        background-color: white;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+    }
     h2
     {
-        color: yellow;
-        background-color: green;
+        color: snow;
+        background-color: black;
         font-family: 'Times New Roman', Times, serif;
         margin: 5vh;
         padding: 2vh;

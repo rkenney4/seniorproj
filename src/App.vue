@@ -85,7 +85,7 @@ switch (roles) {
 <style>
 body
 {
-    background-color: lightblue;
+    background-color: gold;
 }
 #app {
   font-family: 'Courier New', Courier, monospace;
