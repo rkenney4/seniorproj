@@ -54,6 +54,8 @@ const register = () => {
     });
 };
 /*
+Using the auth variable to check if the credentials are correct to login
+
 var pass = document.getElementById("pass");
 document.getElementById('pass').onclick = function() {
     if(auth == true){
