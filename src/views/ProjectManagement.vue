@@ -1,9 +1,9 @@
 <template>
     <h1><u>Users</u></h1>
     <form>
-        <th><b>Email:</b> <input type="text" value="Email" style="margin:3vh"></th>
-        <th><b>First Name:</b> <input type="text" value="First Name" style="margin:3vh"></th>
-        <th><b>Last Name:</b> <input type="text" value="Last Name" style="margin:3vh"></th>
+        <th><b>Email:</b> <input type="text" style="margin:3vh" value="Email"></th>
+        <th><b>First Name:</b> <input type="text" style="margin:3vh" value="First Name"></th>
+        <th><b>Last Name:</b> <input type="text" style="margin:3vh" value="Last Name"></th>
         <th><b>Role:</b> </th>
         <th>
             <select>
