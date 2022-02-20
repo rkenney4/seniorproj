@@ -10,7 +10,7 @@
         <input type="text">
         <br>
         <br>
-        <button type="submit" style="margin:20px"><router-link to="/sign-in">Login</router-link> </button>
+        <button type="submit" style="margin:20px" id="pass"><router-link to="/home">Login</router-link> </button>
         <button type="submit" style="margin:20px"><router-link to="/register">Register</router-link></button>
     </form>
 </body>
@@ -32,7 +32,7 @@ const register = () => {
     signInWithEmailAndPassword(auth, email.value, password.value)
     .then((data) => {
         console.log("Successfully Signed In!");
-        router.push('/feed')
+        router.push('/home')
     })
     .catch((error) => {
         console.log(error.code);
@@ -53,7 +53,14 @@ const register = () => {
         alert(error.message);
     });
 };
+/*
+var pass = document.getElementById("pass");
+document.getElementById('pass').onclick = function() {
+    if(auth == true){
 
+    }
+}
+*/
 const signInWithGoogle = () => {
 
 }

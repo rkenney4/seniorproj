@@ -12,10 +12,10 @@
       Team members: Joey, Saliel, Sarah, Maurice, and Richard
     </p>
     <form class="home">
-      <button class="btn-1" type="submit" style="margin:15px"><router-link to="/sign-in">Sign Out</router-link> </button>
-      <button class="btn-2" type="submit" style="margin:15px"><router-link to="/about">User Details</router-link></button>
-      <button class="btn-3" type="submit" style="margin:15px"><router-link to="/feed">User Management</router-link></button>
-      <button class="btn-3" type="submit" style="margin:15px">Project Management</button>
+      <button type="submit" style="margin:15px"><router-link to="/login">Logout</router-link> </button>
+      <button type="submit" style="margin:15px"><router-link to="/user-details">User Details</router-link></button>
+      <button type="submit" style="margin:15px"><router-link to="/user-management">User Management</router-link></button>
+      <button type="submit" style="margin:15px"><router-link to="/project-management">Project Management</router-link></button>
     </form>
   </body>
 
@@ -39,27 +39,16 @@ export default {
   h1 {
     background-color: black;
   }
-  .btn-1 {
-  background-color: #9b8449;
+  button {
+  background-color: white;
   font-family: 'Courier New', Courier, monospace;
   }
 
-  .btn-2 {
-    background-color: #9b8449;
-    font-family: 'Courier New', Courier, monospace;
-
-  }
-
-  .btn-3 {
-    background-color: #9b8449;
-    font-family: 'Courier New', Courier, monospace;
-  }
-
   p {
-    color: snow;
+    color: black;
   }
 
   h1 {
-  color: #9b8449;
+  color: gold;
   }
 </style>

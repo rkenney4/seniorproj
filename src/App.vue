@@ -1,14 +1,15 @@
 
 <template>
-
+<!--
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">User Details</router-link> |
-    <router-link to="/feed">User Management</router-link> |
+    <router-link to="/home">Home</router-link> |
+    <router-link to="/user-details">User Details</router-link> |
+    <router-link to="/user-management">User Management</router-link> |
     <router-link to="/register">Register</router-link> |
-    <router-link to="/sign-in">Login</router-link> 
+    <router-link to="/login">Login</router-link>  |
+    <router-link to="/project-management">Project Management</router-link>
   </div>
-  
+  -->
   <router-view />
 </template>
 
@@ -105,6 +106,6 @@ body
 }
 
 #nav a.router-link-exact-active {
-  color: #9b8449;
+  color: white;
 }
 </style>
