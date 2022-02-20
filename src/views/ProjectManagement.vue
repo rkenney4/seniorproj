@@ -1,15 +1,16 @@
 <template>
     <h1><u>Users</u></h1>
     <form>
-        <th><b>User 1:</b></th>
-        <th>Email</th>
-        <th>|</th>
-        <th>First Name</th>
-        <th>|</th>
-        <th>Last Name</th>
-        <th>|</th>
-
-        <th>Role</th>
+        <th><b>Email:</b> <input type="text" value="Email"></th>
+        <br>
+        <br>
+        <th><b>First Name:</b> <input type="text" value="First Name"></th>
+        <br>
+        <br>
+        <th><b>Last Name:</b> <input type="text" value="Last Name"></th>
+        <br>
+        <br>
+        <th><b>Role:</b> </th>
         <th>
             <select>
               <option>Admin</option>
@@ -17,51 +18,17 @@
               <option>Unassigned</option>
            </select>
         </th>
-        <th>|</th>
-        <th>Active</th>
+        <br>
+        <br>
+        <th><b>Status:</b></th>
+        <select>
+              <option>Active</option>
+              <option>Inactive</option>
+        </select>
     </form>
     <br>
-    <form>
-        <th><b>User 2:</b></th>
-        <th>Email</th>
-        <th>|</th>
-        <th>First Name</th>
-        <th>|</th>
-        <th>Last Name</th>
-        <th>|</th>
-        <th>Role</th>
-        <th>
-            <select>
-              <option>Admin</option>
-              <option>Tester</option>
-              <option>Unassigned</option>
-           </select>
-        </th>
-        <th>|</th>
-        <th>Active</th>
-    </form>
-    <br>
-    <form>
-        <th><b>User 3:</b></th>
-        <th>Email: <input type="text" value="Email"></th>
-        <th>|</th>
-        <th>First Name</th>
-        <th>|</th>
-        <th>Last Name</th>
-        <th>|</th>
-        <th>Role</th>
-        <th>
-            <select>
-              <option>Admin</option>
-              <option>Tester</option>
-              <option>Unassigned</option>
-           </select>
-        </th>
-        <th>|</th>
-        <th>Active</th>
-    </form>
-    <button type="submit" style="margin:20px">Home</button>
-    <button type="submit" style="margin:10px">Log Out</button>
+    <button type="submit" style="margin:20px"><router-link to="/home">Home</router-link></button>
+    <button type="submit" style="margin:10px"><router-link to="/login">Log Out</router-link></button>
 </template>
 
 <style scoped>
