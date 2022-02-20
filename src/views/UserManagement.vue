@@ -60,8 +60,8 @@
         <th>|</th>
         <th>Active</th>
     </form>
-    <button type="submit" style="margin:20px">Home</button>
-    <button type="submit" style="margin:10px">Log Out</button>
+    <button type="submit" style="margin:20px"><router-link to="/home">Home</router-link></button>
+    <button type="submit" style="margin:10px"><router-link to="/login">Log Out</router-link></button>
 </template>
 
 <style scoped>
