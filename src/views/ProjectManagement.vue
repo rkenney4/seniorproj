@@ -1,15 +1,9 @@
 <template>
     <h1><u>Users</u></h1>
     <form>
-        <th><b>Email:</b> <input type="text" value="Email"></th>
-        <br>
-        <br>
-        <th><b>First Name:</b> <input type="text" value="First Name"></th>
-        <br>
-        <br>
-        <th><b>Last Name:</b> <input type="text" value="Last Name"></th>
-        <br>
-        <br>
+        <th><b>Email:</b> <input type="text" value="Email" style="margin:3vh"></th>
+        <th><b>First Name:</b> <input type="text" value="First Name" style="margin:3vh"></th>
+        <th><b>Last Name:</b> <input type="text" value="Last Name" style="margin:3vh"></th>
         <th><b>Role:</b> </th>
         <th>
             <select>
@@ -18,8 +12,6 @@
               <option>Unassigned</option>
            </select>
         </th>
-        <br>
-        <br>
         <th><b>Status:</b></th>
         <select>
               <option>Active</option>
