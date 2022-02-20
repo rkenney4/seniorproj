@@ -53,7 +53,7 @@ router.beforeEach((to, from, next) => {
       next();
     } else {
       alert("you dont have access!");
-      next("/");
+      next("/home");
     }
   } else {
     next();

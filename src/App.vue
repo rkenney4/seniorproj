@@ -35,7 +35,7 @@ onMounted(() => {
 
 const handleSignOut = () => {
   signOut(auth).then(() => {
-    router.push("/");
+    router.push("/home");
   }).catch((error) => {
   // An error happened.
 });
