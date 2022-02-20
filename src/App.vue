@@ -1,6 +1,6 @@
 
 <template>
-<!--
+
   <div id="nav">
     <router-link to="/home">Home</router-link> |
     <router-link to="/user-details">User Details</router-link> |
@@ -9,7 +9,7 @@
     <router-link to="/login">Login</router-link>  |
     <router-link to="/project-management">Project Management</router-link>
   </div>
-  -->
+  
   <router-view />
 </template>
 
