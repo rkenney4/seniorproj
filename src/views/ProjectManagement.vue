@@ -1,23 +1,23 @@
 <template>
     <h1><u>Projects</u></h1>
     <form>
-        <th><b>Email:</b> <input type="text" style="margin:3vh" value="Email"></th>
-        <th><b>First Name:</b> <input type="text" style="margin:3vh" value="First Name"></th>
-        <th><b>Last Name:</b> <input type="text" style="margin:3vh" value="Last Name"></th>
-        <th><b>Members:</b> <input type="text" style="margin:3vh" value="Members"></th>
-        <th><b>Role:</b> </th>
-        <th>
-            <select>
-              <option>Admin</option>
-              <option>Tester</option>
-              <option>Unassigned</option>
-           </select>
-        </th>
+        <th><b>Project Name:</b> <input type="text" value="Project Name"></th>
         <th><b>Status:</b></th>
         <select>
               <option>Active</option>
               <option>Inactive</option>
         </select>
+        <th><b>Date Created:</b> <input type="date" value="Date Created"></th>
+        <th><b>Date Accessed:</b> <input type="date" value="Last Accessed"></th>
+        <th><b>Members:</b></th>
+        <th>
+            <select>
+              <option>Bob</option>
+              <option>John</option>
+              <option>Mark</option>
+           </select>
+        </th>
+        <th><b>Description:</b> <input type="textarea" value="Description"></th>
     </form>
     <br>
     <button type="submit" style="margin:20px"><router-link to="/home">Home</router-link></button>
