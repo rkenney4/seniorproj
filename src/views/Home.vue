@@ -9,7 +9,10 @@
     </h1>
 
     <p>
-      Team members: Joey, Saliel, Sarah, Maurice, and Richard
+      <b>Team members: Joey, Saliel, Sarah, Maurice, and Richard</b>
+    <br>
+    <br>
+      This program is used to manage/execute test cases for each project. For each test case executed, the program saves those results for the project's admin to view. Our program makes it easier for your testers to work more efficiently by pinpointing bugs more accurately.
     </p>
     <form class="home">
       <button type="submit" style="margin:15px"><router-link to="/login">Logout</router-link> </button>
