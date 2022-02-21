@@ -1,9 +1,10 @@
 <template>
-    <h1><u>Users</u></h1>
+    <h1><u>Projects</u></h1>
     <form>
         <th><b>Email:</b> <input type="text" style="margin:3vh" value="Email"></th>
         <th><b>First Name:</b> <input type="text" style="margin:3vh" value="First Name"></th>
         <th><b>Last Name:</b> <input type="text" style="margin:3vh" value="Last Name"></th>
+        <th><b>Members:</b> <input type="text" style="margin:3vh" value="Members"></th>
         <th><b>Role:</b> </th>
         <th>
             <select>
