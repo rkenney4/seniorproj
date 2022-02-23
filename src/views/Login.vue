@@ -7,7 +7,7 @@
         <br>
         <br>
         <label class="password" for="password"><b>Password:</b></label>
-        <input type="text">
+        <input type="password">
         <br>
         <br>
         <button type="submit" style="margin:20px" id="pass"><router-link to="/home">Login</router-link> </button>
