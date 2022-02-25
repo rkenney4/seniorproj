@@ -21,7 +21,7 @@
     <input type="text">
     <br>
     <br>
-    <button type="submit" style="margin: 5vh"><router-link to="/home">Home</router-link></button>
+    <button type="submit" style="margin: 5vh"><router-link to="/">Home</router-link></button>
     <button type="submit" style="margin: 5vh">Update</button>
     <button type="submit" style="margin: 5vh"><router-link to="/login">Logout</router-link></button>
   </form>

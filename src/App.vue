@@ -2,7 +2,7 @@
 <template>
 
   <div id="nav">
-    <router-link to="/home">Home</router-link> |
+    <router-link to="/">Home</router-link> |
     <router-link to="/user-details">User Details</router-link> |
     <router-link to="/user-management">User Management</router-link> |
     <router-link to="/register">Register</router-link> |

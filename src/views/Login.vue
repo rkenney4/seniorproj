@@ -10,7 +10,7 @@
         <input type="password">
         <br>
         <br>
-        <button type="submit" style="margin:20px" id="pass"><router-link to="/home">Login</router-link> </button>
+        <button type="submit" style="margin:20px" id="pass"><router-link to="/">Login</router-link> </button>
         <button type="submit" style="margin:20px"><router-link to="/register">Register</router-link></button>
     </form>
 </body>
@@ -32,7 +32,7 @@ const register = () => {
     signInWithEmailAndPassword(auth, email.value, password.value)
     .then((data) => {
         console.log("Successfully Signed In!");
-        router.push('/home')
+        router.push('/')
     })
     .catch((error) => {
         console.log(error.code);

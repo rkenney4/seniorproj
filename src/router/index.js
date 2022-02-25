@@ -4,7 +4,7 @@ import Home from "../views/Home.vue";
 
 const routes = [
   {
-    path: "/home",
+    path: "/",
     name: "Home",
     component: Home,
   },
@@ -53,7 +53,7 @@ router.beforeEach((to, from, next) => {
       next();
     } else {
       alert("you dont have access!");
-      next("/home");
+      next("/");
     }
   } else {
     next();
