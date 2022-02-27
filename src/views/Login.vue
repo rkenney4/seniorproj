@@ -1,8 +1,28 @@
 <template>
 <body>
+    <!-- Bootstrap Code for Login Page -->
+     <div>
+       <!-- Call the functions onSubmit and onReset  -->
+       <!-- There is a syntax error because of a missing end tag  -->
+          <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+      <b-form-group
+        id="input-group-1"
+        label="Email address:"
+        label-for="input-1"
+        description="We'll never share your email with anyone else."
+      >
+        <b-form-input
+          id="input-1"
+          v-model="form.email"
+          type="email"
+          placeholder="Enter email"
+          required
+        ></b-form-input>
+      </b-form-group>
+    </div>
     <h1><b><u>Login</u></b></h1>
     <form>
-        <label class="email" for="email"><b>Email:</b></label>
+        <label class="email" for="email"><b>Email Address:</b></label>
         <input type="text">
         <br>
         <br>
@@ -10,11 +30,14 @@
         <input type="password">
         <br>
         <br>
+        <input type="checkbox">
+        <!-- Remember me checkbox to remember email and password -->
+        <label for="remember">Remember Me</label> 
         <button type="submit" style="margin:20px" id="pass"><router-link to="/">Login</router-link> </button>
         <button type="submit" style="margin:20px"><router-link to="/register">Register</router-link></button>
     </form>
+    
 </body>
-
 </template>
 
 <script setup>
@@ -66,6 +89,18 @@ document.getElementById('pass').onclick = function() {
 const signInWithGoogle = () => {
 
 }
+// Function definition for when the submit button is clicked
+function onSubmit()
+{
+    event.preventDefault(); // Prevent the webpage from going to another page when clicked
+
+}
+
+function onReset(event) // Function to reset the form
+{
+    event.preventDefault();
+}
+
 </script>
 
 <style scoped>
