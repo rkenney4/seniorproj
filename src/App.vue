@@ -157,4 +157,6 @@ body
   border-bottom:2px solid gold;
 }
 
+@import'~bootstrap/dist/css/bootstrap.css'
+
 </style>
