@@ -4,13 +4,13 @@
      <div>
        <!-- Call the functions onSubmit and onReset  -->
        <!-- There is a syntax error because of a missing end tag  -->
-          <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+          <b-form @submit="onSubmit" @reset="onReset" v-if="show"></b-form>
       <b-form-group
         id="input-group-1"
         label="Email address:"
         label-for="input-1"
         description="We'll never share your email with anyone else."
-      >
+      ></b-form-group>
         <b-form-input
           id="input-1"
           v-model="form.email"
@@ -18,7 +18,6 @@
           placeholder="Enter email"
           required
         ></b-form-input>
-      </b-form-group>
     </div>
     <h1><b><u>Login</u></b></h1>
     <form>
