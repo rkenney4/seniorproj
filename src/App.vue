@@ -2,12 +2,39 @@
 <template>
 
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/user-details">User Details</router-link> |
-    <router-link to="/user-management">User Management</router-link> |
-    <router-link to="/register">Register</router-link> |
-    <router-link to="/login">Login</router-link>  |
-    <router-link to="/project-management">Project Management</router-link>
+    <div>
+      <form class="home">
+        <button class="button line" type="submit" style="margin:15px"><router-link to="/">Home</router-link> </button>
+        <br>
+        <br>
+        <button class="button line" type="submit" style="margin:15px"><router-link to="/user-details">User Details</router-link></button>
+        <br>
+        <br>
+        <button class="button line" type="submit" style="margin:15px"><router-link to="/user-management">User Management</router-link></button>
+        <br>
+        <br>
+        <button class="button line" type="submit" style="margin:15px"><router-link to="/project-management">Project Management</router-link></button>
+        <br>
+        <br>
+        <button class="button line" type="submit" style="margin:15px"><router-link to="/login">Logout</router-link> </button>
+        <br><br>
+      </form>
+
+      <!--
+      <router-link to="/">Home</router-link>
+      <br><br>
+      <router-link to="/user-details">User Details</router-link>
+      <br><br>
+      <router-link to="/user-management">User Management</router-link>
+      <br><br>
+      <router-link to="/register">Register</router-link>
+      <br><br>
+      <router-link to="/login">Login</router-link>
+      <br><br>
+      <router-link to="/project-management">Project Management</router-link>
+      <br><br>
+      -->
+    </div>
   </div>
   
   <router-view />
@@ -86,26 +113,48 @@ switch (roles) {
 <style>
 body
 {
-    background-color: gold;
+    background-color: #202125;
 }
 #app {
   font-family: 'Courier New', Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 #nav {
   padding: 30px;
+  position: absolute;
+  left: 0vh;
+  height: 90vh;
+  background-color: #202125;
 }
 
 #nav a {
   font-weight: bold;
-  color: black;
+  color: #bec1c6;
 }
 
 #nav a.router-link-exact-active {
   color: white;
 }
+
+.button {
+  background-color: black;
+  color: #bec2c5;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px white;
+}
+
+.line {
+  border-bottom:2px solid gold;
+}
+
 </style>
