@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="nav">
     <b-table striped hover :items="items"></b-table>
   </div>
 </template>
@@ -18,3 +18,14 @@
     }
   }
 </script>
+
+<style scoped>
+  #nav {
+    position: fixed;
+    left: 40vh;
+    right: 30vh;
+    background-color: #bbbec3;
+    height: 100vh;
+    color: #202125;
+  }
+</style>

@@ -1,6 +1,6 @@
 <template>
   <h1>Details</h1>
-  <form class="about">
+  <form id="nav" class="about">
     <label for="fName">First Name: </label>
     <input type="text" value="Bob">
     <br>
@@ -21,8 +21,21 @@
     <input type="text">
     <br>
     <br>
+    <!--
     <button type="submit" style="margin: 5vh"><router-link to="/">Home</router-link></button>
     <button type="submit" style="margin: 5vh">Update</button>
     <button type="submit" style="margin: 5vh"><router-link to="/login">Logout</router-link></button>
+    -->
   </form>
 </template>
+
+<style scoped>
+  #nav {
+    position: fixed;
+    left: 40vh;
+    right: 30vh;
+    background-color: #bbbec3;
+    height: 100vh;
+    color: #202125;
+  }
+</style>

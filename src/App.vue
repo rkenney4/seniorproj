@@ -16,7 +16,7 @@
         <button class="button line" type="submit" style="margin:15px"><router-link to="/project-management">Project Management</router-link></button>
         <br>
         <br>
-        <button class="button line" type="submit" style="margin:15px"><router-link to="/login">Logout</router-link> </button>
+        <button class="button line" type="submit" style="margin:15px"><router-link to="/">Logout</router-link> </button>
         <br><br>
       </form>
 
@@ -125,8 +125,8 @@ body
 }
 
 #nav {
-  padding: 30px;
-  position: absolute;
+  padding: 5vh;
+  position: fixed;
   left: 0vh;
   height: 90vh;
   background-color: #202125;
