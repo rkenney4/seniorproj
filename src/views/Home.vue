@@ -2,24 +2,27 @@
 <template>
   <head>
   </head>
-  <body>
+  <body id="nav">
     <img src="../assets/OU-Logo.jpg" alt="OU-Logo" width="200" height="150">
-    <h1>
+    <h2 class="line">
       <b>Welcome to our Quality Assurance Management Team!</b>
-    </h1>
-
+      <br><br>
+    </h2>
+    <p class="line">
+      This program is used to manage/execute test cases for each project. For each test case executed, the program saves those results for the project's admin to view. Our program makes it easier for your testers to work more efficiently by pinpointing bugs more accurately.
+      <br><br>
+    </p>
     <p>
       <b>Team members: Joey, Saliel, Sarah, Maurice, and Richard</b>
-    <br>
-    <br>
-      This program is used to manage/execute test cases for each project. For each test case executed, the program saves those results for the project's admin to view. Our program makes it easier for your testers to work more efficiently by pinpointing bugs more accurately.
     </p>
+    <!--
     <form class="home">
       <button type="submit" style="margin:15px"><router-link to="/login">Logout</router-link> </button>
       <button type="submit" style="margin:15px"><router-link to="/user-details">User Details</router-link></button>
       <button type="submit" style="margin:15px"><router-link to="/user-management">User Management</router-link></button>
       <button type="submit" style="margin:15px"><router-link to="/project-management">Project Management</router-link></button>
     </form>
+    -->
   </body>
 
 
@@ -39,19 +42,29 @@ export default {
 </script>
 
 <style scoped>
-  h1 {
-    background-color: black;
+  h2 {
+    color: #202125;
   }
   button {
-  background-color: white;
+  background-color: #202125;
   font-family: 'Courier New', Courier, monospace;
+  box-shadow: 5px 5px 5px ;
   }
 
   p {
-    color: black;
+    color: #202125;
   }
 
-  h1 {
-  color: gold;
+  #nav {
+    position: fixed;
+    left: 40vh;
+    right: 30vh;
+    background: #bbbec3;
+    height: 100vh;
   }
+
+  .line {
+    border-bottom:3px solid goldenrod;;
+  }
+
 </style>
