@@ -34,6 +34,7 @@
       <router-link to="/project-management">Project Management</router-link>
       <br><br>
       -->
+
     </div>
   </div>
   
@@ -157,6 +158,5 @@ body
   border-bottom:2px solid gold;
 }
 
-@import'~bootstrap/dist/css/bootstrap.css'
 
 </style>
