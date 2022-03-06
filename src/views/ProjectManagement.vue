@@ -67,6 +67,11 @@
                 </div>
             </div>
         </div>
+        <svg width="400" height="100">
+        <rect width="200" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+         <rect width="100" height="500" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+         <rect width="300" height="200" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+        </svg>
         <!--
         <button type="submit" style="margin:20px"><router-link to="/">Home</router-link></button>
         <button type="submit" style="margin:10px"><router-link to="/login">Log Out</router-link></button>
