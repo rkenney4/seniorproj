@@ -27,8 +27,8 @@
                 <div class="flip-card-inner active">
                     <div class="flip-card-front">
                         <h2><b>Instagram</b></h2> 
-                        <p><b>Last Accessed: </b>02/01/22</p> 
-                        <p><b>Last Created: </b>11/22/21</p> 
+                        <p><b>Last Accessed: </b>03/06/22</p> 
+                        <p><b>Last Created: </b>12/14/21</p> 
                             <p><b>Admin: </b> Yandel Pugh</p>
                             <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
                     </div>
@@ -42,14 +42,14 @@
                 <div class="flip-card-inner inactive">
                     <div class="flip-card-front">
                         <h2><b>Twitter</b></h2> 
-                        <p><b>Last Accessed: </b>02/01/22</p> 
-                        <p><b>Last Created: </b>11/22/21</p> 
+                        <p><b>Last Accessed: </b>03/05/22</p> 
+                        <p><b>Last Created: </b>10/22/21</p> 
                             <p><b>Admin: </b> Yandel Pugh</p>
                             <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
                     </div>
                     <div class="flip-card-back">
                         <h4>Description: </h4>
-                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                        <p>Twitter is a free social networking microblogging service that allows registered members to broadcast short posts called tweets. Twitter members can broadcast tweets and follow other users' tweets by using multiple platforms and devices.</p>
                     </div>
                 </div>
             </div>
@@ -57,14 +57,14 @@
                 <div class="flip-card-inner active">
                     <div class="flip-card-front">
                         <h2><b>Facebook</b></h2> 
-                        <p><b>Last Accessed: </b>02/01/22</p> 
-                        <p><b>Last Created: </b>11/22/21</p> 
+                        <p><b>Last Accessed: </b>01/25/22</p> 
+                        <p><b>Last Created: </b>09/20/21</p> 
                             <p><b>Admin: </b> Yandel Pugh</p>
                             <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
                     </div>
                     <div class="flip-card-back">
                         <h4>Description: </h4>
-                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                        <p>Meta Platforms, Inc., doing business as Meta and formerly known as Facebook, Inc., is an American multinational technology conglomerate based in Menlo Park, California. The company is the parent organization of Facebook, Instagram, and WhatsApp, among other subsidiaries.</p>
                     </div>
                 </div>
             </div>
@@ -72,14 +72,14 @@
                 <div class="flip-card-inner inactive">
                     <div class="flip-card-front">
                         <h2><b>Snapchat</b></h2> 
-                        <p><b>Last Accessed: </b>02/01/22</p> 
-                        <p><b>Last Created: </b>11/22/21</p> 
+                        <p><b>Last Accessed: </b>01/10/22</p> 
+                        <p><b>Last Created: </b>08/22/21</p> 
                             <p><b>Admin: </b> Yandel Pugh</p>
                             <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
                     </div>
                     <div class="flip-card-back">
                         <h4>Description: </h4>
-                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                        <p>Snapchat is an American multimedia instant messaging app and service developed by Snap Inc., originally Snapchat Inc. One of the principal features of Snapchat is that pictures and messages are usually only available for a short time before they become inaccessible to their recipients.</p>
                     </div>
                 </div>
             </div>
@@ -87,14 +87,14 @@
                 <div class="flip-card-inner inactive">
                     <div class="flip-card-front">
                         <h2><b>Yahoo</b></h2> 
-                        <p><b>Last Accessed: </b>02/01/22</p> 
-                        <p><b>Last Created: </b>11/22/21</p> 
+                        <p><b>Last Accessed: </b>02/05/22</p> 
+                        <p><b>Last Created: </b>07/30/21</p> 
                             <p><b>Admin: </b> Yandel Pugh</p>
                             <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
                     </div>
                     <div class="flip-card-back">
                         <h4>Description: </h4>
-                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                        <p>Yahoo! is an Internet portal that incorporates a search engine and a directory of World Wide Web sites organized in a hierarchy of topic categories. As a directory, it provides both new and seasoned Web users the reassurance of a structured view of hundreds of thousands of Web sites and millions of Web pages.</p>
                     </div>
                 </div>
             </div>
@@ -102,23 +102,18 @@
                 <div class="flip-card-inner active">
                     <div class="flip-card-front">
                         <h2><b>Gmail</b></h2> 
-                        <p><b>Last Accessed: </b>02/01/22</p> 
-                        <p><b>Last Created: </b>11/22/21</p> 
+                        <p><b>Last Accessed: </b>03/03/22</p> 
+                        <p><b>Last Created: </b>05/25/21</p> 
                             <p><b>Admin: </b> Yandel Pugh</p>
                             <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
                     </div>
                     <div class="flip-card-back">
                         <h4>Description: </h4>
-                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                        <p>Gmail (pronounced Gee-mail) is a free Web-based e-mail service that provides users with a gigabyte of storage for messages and provides the ability to search for specific messages. The Gmail program also automatically organizes successively related messages into a conversational thread.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <svg width="400" height="100">
-        <rect width="200" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
-         <rect width="100" height="500" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
-         <rect width="300" height="200" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
-        </svg>
         <!--
         <button type="submit" style="margin:20px"><router-link to="/">Home</router-link></button>
         <button type="submit" style="margin:10px"><router-link to="/login">Log Out</router-link></button>
