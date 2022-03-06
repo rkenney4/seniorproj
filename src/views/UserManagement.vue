@@ -34,6 +34,7 @@
                     <div class="flip-card-back">
                        <p>Email: jfrye@hotmail.com</p>
                        <p>Password: jay#123</p>
+                        <p>Role: Admin</p>
                     </div>
                 </div>
             </div>
@@ -47,6 +48,7 @@
                     <div class="flip-card-back">
                          <p>Email: kmoses235@yahoo.com</p>
                          <p>Password: kaileyMoses243</p>
+                          <p>Role: Admin</p>
                     </div>
                 </div>
             </div>
@@ -56,10 +58,12 @@
                         <h2><b>Lyric Adkins</b></h2> 
                         <p><b>Last Accessed: </b>02/06/22</p> 
                         <p><b>Last Created: </b>08/08/21</p> 
+                         
                     </div>
                     <div class="flip-card-back">
                          <p>Email: lyric@gmail.com</p>
                          <p>Password: lyric#6687</p>
+                          <p>Role: Admin</p>
                     </div>
                 </div>
             </div>
@@ -73,6 +77,7 @@
                     <div class="flip-card-back">
                          <p>Email: atticus123@oakland.edu</p>
                          <p>Password: atk$456</p>
+                          <p>Role: Admin</p>
                     </div>
                 </div>
             </div>
@@ -86,6 +91,7 @@
                     <div class="flip-card-back">
                          <p>Email: jairo345@gmail.com</p>
                          <p>Password: lyric#6687</p>
+                          <p>Role: Admin</p>
                     </div>
                 </div>
             </div>
@@ -99,6 +105,7 @@
                     <div class="flip-card-back">
                         <p>Email: zaniyah360@gmail.com</p>
                         <p>Password: zaniyah#6687</p>
+                         <p>Role: Admin</p>
                     </div>
                 </div>
             </div>
@@ -112,6 +119,7 @@
                     <div class="flip-card-back">
                          <p>Email: jairo345@gmail.com</p>
                          <p>Password: lyric#6687</p>
+                          <p>Role: Admin</p>
                     </div>
                 </div>
             </div>
@@ -121,10 +129,12 @@
                         <h2><b>Austin Gilmore</b></h2> 
                         <p><b>Last Accessed: </b>02/01/22</p> 
                         <p><b>Last Created: </b>11/22/21</p> 
+                         
                     </div>
                     <div class="flip-card-back">
                         <p>Email: austin345@gmail.com</p>
                          <p>Password: austin#6687</p>
+                          <p>Role: Admin</p>
                     </div>
                 </div>
             </div>
@@ -138,6 +148,7 @@
                     <div class="flip-card-back">
                         <p>Email: mrogers@yahoo.com</p>
                         <p>Password: rogers#300</p>
+                         <p>Role: Admin</p>
                     </div>
                 </div>
             </div>
@@ -151,6 +162,7 @@
                     <div class="flip-card-back">
                         <p>Email: saunders345@gmail.com</p>
                          <p>Password: saunder#6687</p>
+                          <p>Role: Admin</p>
                     </div>
                 </div>
             </div>
@@ -160,10 +172,12 @@
                         <h2><b>Matthew Guerra</b></h2> 
                         <p><b>Last Accessed: </b>02/01/22</p> 
                         <p><b>Last Created: </b>11/22/21</p> 
+                         <p>Role: Admin</p>
                     </div>
                     <div class="flip-card-back">
                         <p>Email: matt348@gmail.com</p>
                          <p>Password: matthew#6687</p>
+                          <p>Role: Admin</p>
                     </div>
                 </div>
             </div>
@@ -177,6 +191,7 @@
                     <div class="flip-card-back">
                         <p>Email: mollie345@gmail.com</p>
                          <p>Password: mollie#6687</p>
+                         <p>Role: Admin</p>
                     </div>
                 </div>
             </div>
