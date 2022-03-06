@@ -1,5 +1,5 @@
 <template>
-    <h1><u>Projects</u></h1>
+    <h1><u>User Management</u></h1>
     <body>
         <!--
         <form id="nav">
@@ -23,89 +23,185 @@
         </form>
         -->
         <br>
-        <div class="row">
-            <div class="card shift column">
-                <div class="container">
-                <h2><b>Jaylene Frye</b></h2> 
-                <h4>Tester</h4> 
-                <h4>Last Created: 11/22/21</h4> 
+        <div class="row" style="width: 90%">
+            <div class="flip-card card shift column">
+                <div class="flip-card-inner active">
+                    <div class="flip-card-front">
+                        <h2><b>Jaylene Frye</b></h2> 
+                        <p><b>Last Accessed: </b>02/01/22</p> 
+                        <p><b>Last Created: </b>11/22/21</p> 
+                            <p><b>Admin: </b> Yandel Pugh</p>
+                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Description: </h4>
+                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card shift column">
-                <div class="container">
-                    <h2><b>Kailey Moses</b></h2> 
-                    <h4>Admin</h4> 
-                    <h4>Last Created: 10/20/20</h4> 
+            <div class="flip-card card shift column">
+                <div class="flip-card-inner active">
+                    <div class="flip-card-front">
+                        <h2><b>Kailey Moses</b></h2> 
+                        <p><b>Last Accessed: </b>02/01/22</p> 
+                        <p><b>Last Created: </b>11/22/21</p> 
+                            <p><b>Admin: </b> Yandel Pugh</p>
+                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Description: </h4>
+                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card shift column">
-                <div class="container">
-                <h2><b>Lyric Adkins</b></h2> 
-                <h4>Admin</h4> 
-                <h4>Last Created: 04/17/21</h4> 
+            <div class="flip-card card shift column">
+                <div class="flip-card-inner active">
+                    <div class="flip-card-front">
+                        <h2><b>Lyric Adkins</b></h2> 
+                        <p><b>Last Accessed: </b>02/01/22</p> 
+                        <p><b>Last Created: </b>11/22/21</p> 
+                            <p><b>Admin: </b> Yandel Pugh</p>
+                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Description: </h4>
+                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card shift column">
-                <div class="container">
-                    <h2><b>Atticus Mckay</b></h2> 
-                    <h4>Tester</h4> 
-                    <h4>Last Created: 04/20/19</h4> 
+            <div class="flip-card card shift column">
+                <div class="flip-card-inner inactive">
+                    <div class="flip-card-front">
+                        <h2><b>Atticus Mckay</b></h2> 
+                        <p><b>Last Accessed: </b>02/01/22</p> 
+                        <p><b>Last Created: </b>11/22/21</p> 
+                            <p><b>Admin: </b> Yandel Pugh</p>
+                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Description: </h4>
+                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card shift column">
-                <div class="container">
-                    <h2><b>Jairo French</b></h2> 
-                    <h4>Admin</h4> 
-                    <h4>Last Created: 10/20/15</h4> 
+            <div class="flip-card card shift column">
+                <div class="flip-card-inner active">
+                    <div class="flip-card-front">
+                        <h2><b>Jairo French</b></h2> 
+                        <p><b>Last Accessed: </b>02/01/22</p> 
+                        <p><b>Last Created: </b>11/22/21</p> 
+                            <p><b>Admin: </b> Yandel Pugh</p>
+                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Description: </h4>
+                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card shift column">
-                <div class="container">
-                    <h2><b>Zaniyah Wade</b></h2> 
-                    <h4>Unassigned</h4> 
-                    <h4>Last Created: 01/17/16</h4> 
+            <div class="flip-card card shift column">
+                <div class="flip-card-inner inactive">
+                    <div class="flip-card-front">
+                        <h2><b>Zaniyah Wade</b></h2> 
+                        <p><b>Last Accessed: </b>02/01/22</p> 
+                        <p><b>Last Created: </b>11/22/21</p> 
+                            <p><b>Admin: </b> Yandel Pugh</p>
+                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Description: </h4>
+                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card shift column">
-                <div class="container">
-                <h2><b>Chaya Mason</b></h2> 
-                <h4>Unassigned</h4> 
-                <h4>Last Created: 11/22/21</h4> 
+            <div class="flip-card card shift column">
+                <div class="flip-card-inner inactive">
+                    <div class="flip-card-front">
+                        <h2><b>Chaya Mason</b></h2> 
+                        <p><b>Last Accessed: </b>02/01/22</p> 
+                        <p><b>Last Created: </b>11/22/21</p> 
+                            <p><b>Admin: </b> Yandel Pugh</p>
+                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Description: </h4>
+                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card shift column">
-                <div class="container">
-                    <h2><b>Austin Gilmore</b></h2> 
-                    <h4>Unassigned</h4> 
-                    <h4>Last Created: 10/20/20</h4> 
+            <div class="flip-card card shift column">
+                <div class="flip-card-inner active">
+                    <div class="flip-card-front">
+                        <h2><b>Austin Gilmore</b></h2> 
+                        <p><b>Last Accessed: </b>02/01/22</p> 
+                        <p><b>Last Created: </b>11/22/21</p> 
+                            <p><b>Admin: </b> Yandel Pugh</p>
+                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Description: </h4>
+                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card shift column">
-                <div class="container">
-                <h2><b>Mohamed Rogers</b></h2> 
-                <h4>Unassigned</h4> 
-                <h4>Last Created: 04/17/21</h4> 
+            <div class="flip-card card shift column">
+                <div class="flip-card-inner inactive">
+                    <div class="flip-card-front">
+                        <h2><b>Mohamed Rogers</b></h2> 
+                        <p><b>Last Accessed: </b>02/01/22</p> 
+                        <p><b>Last Created: </b>11/22/21</p> 
+                            <p><b>Admin: </b> Yandel Pugh</p>
+                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Description: </h4>
+                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card shift column">
-                <div class="container">
-                    <h2><b>Josue Saunders</b></h2> 
-                    <h4>Unassigned</h4> 
-                    <h4>Last Created: 04/20/19</h4> 
+            <div class="flip-card card shift column">
+                <div class="flip-card-inner active">
+                    <div class="flip-card-front">
+                        <h2><b>Josue Saunders</b></h2> 
+                        <p><b>Last Accessed: </b>02/01/22</p> 
+                        <p><b>Last Created: </b>11/22/21</p> 
+                            <p><b>Admin: </b> Yandel Pugh</p>
+                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Description: </h4>
+                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card shift column">
-                <div class="container">
-                    <h2><b>Matthew Guerra</b></h2> 
-                    <h4>Tester</h4> 
-                    <h4>Last Created: 10/20/15</h4> 
+            <div class="flip-card card shift column">
+                <div class="flip-card-inner inactive">
+                    <div class="flip-card-front">
+                        <h2><b>Matthew Guerra</b></h2> 
+                        <p><b>Last Accessed: </b>02/01/22</p> 
+                        <p><b>Last Created: </b>11/22/21</p> 
+                            <p><b>Admin: </b> Yandel Pugh</p>
+                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Description: </h4>
+                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card shift column">
-                <div class="container">
-                    <h2><b>Mollie Calhoun</b></h2> 
-                    <h4>Unassigned</h4> 
-                    <h4>Last Created: 01/17/16</h4> 
+            <div class="flip-card card shift column">
+                <div class="flip-card-inner inactive">
+                    <div class="flip-card-front">
+                        <h2><b>Mollie Calhoun</b></h2> 
+                        <p><b>Last Accessed: </b>02/01/22</p> 
+                        <p><b>Last Created: </b>11/22/21</p> 
+                            <p><b>Admin: </b> Yandel Pugh</p>
+                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h4>Description: </h4>
+                        <p>Instagram is an American photo and video sharing social networking service founded by Kevin Systrom and Mike Krieger. In April 2012, Facebook Inc. acquired the service for approximately US$1 billion in cash and stock.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,7 +254,7 @@
   transition: 0.3s;
   width: 20%;
   border-radius: 5px;
-  opacity: 0.5;
+  opacity: 1;
   margin: 1vh;
   background-color: gold;
 }
@@ -182,6 +278,66 @@
 .column {
   float: left;
   width: 25%;
+  padding: 1vh 1vh;
+}
+.active {
+    background-color: green;
+}
+.inactive {
+    background-color: red;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 white;
+}
+
+.container {
+  padding: 2vh 2vh;
+}
+.shift {
+    left: 20%;
+    right: 30%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 25%;
   padding: 0 10px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  color: black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
 }
 </style>
