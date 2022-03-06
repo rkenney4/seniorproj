@@ -29,8 +29,8 @@
                         <h2><b>Instagram</b></h2> 
                         <p><b>Last Accessed: </b>03/06/22</p> 
                         <p><b>Last Created: </b>12/14/21</p> 
-                            <p><b>Admin: </b> Yandel Pugh</p>
-                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                            <p><b>Admin: </b> Oinone Jayda</p>
+                            <p><b>Testers: </b> Timoteo Kris, Aristarkh Djehutimose, Feride Bruna</p>
                     </div>
                     <div class="flip-card-back">
                         <h4>Description: </h4>
@@ -44,8 +44,8 @@
                         <h2><b>Twitter</b></h2> 
                         <p><b>Last Accessed: </b>03/05/22</p> 
                         <p><b>Last Created: </b>10/22/21</p> 
-                            <p><b>Admin: </b> Yandel Pugh</p>
-                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                            <p><b>Admin: </b> Mitzi Tye</p>
+                            <p><b>Testers: </b> Liisi Eadwine, Felicia Quasimodo, Jibril Netsai</p>
                     </div>
                     <div class="flip-card-back">
                         <h4>Description: </h4>
@@ -59,8 +59,8 @@
                         <h2><b>Facebook</b></h2> 
                         <p><b>Last Accessed: </b>01/25/22</p> 
                         <p><b>Last Created: </b>09/20/21</p> 
-                            <p><b>Admin: </b> Yandel Pugh</p>
-                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                            <p><b>Admin: </b> Gessica Nnenna</p>
+                            <p><b>Testers: </b> Azeneth Attikos, Vladěna Keith, Frano Lakshman</p>
                     </div>
                     <div class="flip-card-back">
                         <h4>Description: </h4>
@@ -74,8 +74,8 @@
                         <h2><b>Snapchat</b></h2> 
                         <p><b>Last Accessed: </b>01/10/22</p> 
                         <p><b>Last Created: </b>08/22/21</p> 
-                            <p><b>Admin: </b> Yandel Pugh</p>
-                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                            <p><b>Admin: </b> Liesbeth Evelina</p>
+                            <p><b>Testers: </b> Nani Fàtima, Shyam Azrael, Harald Yoann</p>
                     </div>
                     <div class="flip-card-back">
                         <h4>Description: </h4>
@@ -89,8 +89,8 @@
                         <h2><b>Yahoo</b></h2> 
                         <p><b>Last Accessed: </b>02/05/22</p> 
                         <p><b>Last Created: </b>07/30/21</p> 
-                            <p><b>Admin: </b> Yandel Pugh</p>
-                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                            <p><b>Admin: </b> Hektor Ferdinand</p>
+                            <p><b>Testers: </b> Vasuda Bencivenni, Judas Lumír, Ultán Baruch</p>
                     </div>
                     <div class="flip-card-back">
                         <h4>Description: </h4>
@@ -104,8 +104,8 @@
                         <h2><b>Gmail</b></h2> 
                         <p><b>Last Accessed: </b>03/03/22</p> 
                         <p><b>Last Created: </b>05/25/21</p> 
-                            <p><b>Admin: </b> Yandel Pugh</p>
-                            <p><b>Testers: </b> Oliver Ingram, Ivy Holland, Harper Burgess</p>
+                            <p><b>Admin: </b> Mickaël Filip</p>
+                            <p><b>Testers: </b>Kandi Libbie, Gavri'el Epiktetos, Art Uduakobong</p>
                     </div>
                     <div class="flip-card-back">
                         <h4>Description: </h4>
