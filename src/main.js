@@ -1,19 +1,10 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
+import * as firebase from "firebase/app";
 
-createApp(App).use(router).mount("#app");
-
-
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+var firebaseConfig = {
   apiKey: "AIzaSyAsHD4xIHmnXgxx3uZiVhiRimh2jOX8eds",
   authDomain: "seniorproj-d8a09.firebaseapp.com",
   projectId: "seniorproj-d8a09",
@@ -23,5 +14,12 @@ const firebaseConfig = {
   measurementId: "G-5BEXGKHHM6"
 };
 
-initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+const app = createApp(App);
+
+app.use(router);
+
+app.mount("#app");

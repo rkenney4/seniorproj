@@ -22,6 +22,7 @@ const register = () => {
     signInWithEmailAndPassword(auth, email.value, password.value)
     .then((data) => {
         console.log("Successfully Signed In!");
+        console.log(auth.currentUser)
         router.push('/feed')
     })
     .catch((error) => {

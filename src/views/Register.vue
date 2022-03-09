@@ -18,6 +18,7 @@ const register = () => {
 createUserWithEmailAndPassword(getAuth(), email.value, password.value)
     .then((data) => {
         console.log("Successfully registered!");
+        console.log(auth.currentUser)
         router.push('/feed')
     })
     .catch((error) => {
