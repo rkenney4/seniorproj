@@ -34,7 +34,7 @@
     position: fixed;
     left: 40vh;
     right: 30vh;
-    background-color: #bbbec3;
+    background-color: whitesmoke;
     height: 100vh;
     color: #202125;
   }

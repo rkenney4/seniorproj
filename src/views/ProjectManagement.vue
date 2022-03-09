@@ -127,13 +127,6 @@
         font-family: 'Times New Roman', Times, serif;
         font-size: 10vh;
     }
-  #nav {
-    left: 40vh;
-    right: 30vh;
-    background-color: #bbbec3;
-    height: 100vh;
-    color: #202125;
-  }
   div {
       position: relative;
       color: #202125;
@@ -158,8 +151,8 @@
   padding: 2vh 2vh;
 }
 .shift {
-    left: 20%;
-    right: 30%;
+    left: 50vh;
+    right: 40vh;
 }
 .row:after {
   content: "";

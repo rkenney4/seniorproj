@@ -59,7 +59,7 @@ export default {
     position: fixed;
     left: 40vh;
     right: 30vh;
-    background: #bbbec3;
+    background: whitesmoke;
     height: 100vh;
   }
 

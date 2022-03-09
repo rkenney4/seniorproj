@@ -130,6 +130,7 @@ body
   left: 0vh;
   height: 90vh;
   background-color: #202125;
+  z-index: 2;
 }
 
 #nav a {
@@ -156,9 +157,6 @@ button:hover {
   box-shadow: 0 8px 16px 0 white;
 }
 
-.line {
-  border-bottom:2px solid gold;
-}
 
 
 </style>
