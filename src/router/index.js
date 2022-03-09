@@ -39,7 +39,12 @@ const routes = [
     path: "/project-management",
     name: "Project Management",
     component: () => import("../views/ProjectManagement.vue")
-    }
+  },
+  {
+    path: "/test-management",
+    name: "Test Management",
+    component: () => import("../views/TestManagement.vue")
+  }
 ];
 
 const router = createRouter({

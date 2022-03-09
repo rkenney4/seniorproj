@@ -16,6 +16,9 @@
         <button class="button line" type="submit" style="margin:15px"><router-link to="/project-management">Project Management</router-link></button>
         <br>
         <br>
+        <button class="button line" type="submit" style="margin:15px"><router-link to="/test-management">Test Management</router-link></button>
+        <br>
+        <br>
         <button class="button line" type="submit" style="margin:15px"><router-link to="/">Logout</router-link> </button>
         <br><br>
       </form>
