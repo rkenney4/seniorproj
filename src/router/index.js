@@ -16,8 +16,16 @@ const router = createRouter({
       component: () => import("../views/SignIn.vue"),
     },
     {
-      path: "/feed",
-      component: () => import("../views/Feed.vue"),
+      path: "/user-details",
+      component: () => import("../views/UserDetails.vue"),
+    },
+    {
+      path: "/project-management",
+      component: () => import("../views/ProjectManagement.vue"),
+    },
+    {
+      path: "/user-management",
+      component: () => import("../views/UserManagement.vue"),
     },
   ],
 });

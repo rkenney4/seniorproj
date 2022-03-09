@@ -2,7 +2,9 @@
   <div>
     <nav>
       <router-link to="/"> Home </router-link> |
-      <router-link to="/feed"> Feed </router-link> |
+      <router-link to="/user-details">User Details</router-link> |
+      <router-link to="/user-management"> User Management </router-link> |
+      <router-link to="/project-management">Project Management</router-link> |
       <router-link to="/register"> Register </router-link> |
       <router-link to="/sign-in"> Login </router-link> |
       <button @click="handleSignOut" v-if="isLoggedIn" >Sign Out</button>
