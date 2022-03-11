@@ -2,9 +2,9 @@
     <h1><u>Test Management</u></h1>
 
     <body>
-        <div>
+        <div> <!--Instagram div-->
             <div class="container" style="width: 85%">
-                <button class="open-button" onclick="user('login') openForm() ">Login</button>
+                <button class="open-button" onclick="openLoginForm()">Login</button>
                 <div class="form-popup" id="login">
                 <form action="/action_page.php" class="form-container">
                     <h1>Login</h1>
@@ -16,14 +16,14 @@
                     <input type="password" placeholder="Enter Password" name="psw" required>
 
                     <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
                 </form>
                 </div>
             </div>
             <br><br>
             <div>
                 <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openForm()">Logout</button>
+                <button class="open-button" onclick="openLogoutForm()">Logout</button>
                 <div class="form-popup" id="logout">
                 <form action="/action_page.php" class="form-container">
                     <h1>Logout</h1>
@@ -35,23 +35,165 @@
                     <input type="password" placeholder="Enter Password" name="psw" required>
 
                     <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    <button type="button" class="btn cancel" onclick="closeLogoutForm()">Close</button>
+                </form>
+                </div>
+                </div>
+            </div>
+            <br><br>
+            <div>
+                <div class="container" style="width: 85%">
+                <button class="open-button" onclick="openLikePostForm()">Liking a post</button>
+                <div class="form-popup" id="likePost">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Liking a post</h1>
+
+                    <label for="email"><b>post</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>post</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeLikePostForm()">Close</button>
+                </form>
+                </div>
+                </div>
+            </div>
+            <br><br>
+            <div>
+                <div class="container" style="width: 85%">
+                <button class="open-button" onclick="openSendDMForm()">Sending yourself a DM</button>
+                <div class="form-popup" id="sendDM">
+                <form action="/action_page.php" class="form-container">
+                    <h1>send DM</h1>
+
+                    <label for="email"><b>Send</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>DM</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeSendDMForm()">Close</button>
                 </form>
                 </div>
                 </div>
             </div>
         </div>
+<br><br><br>
+        <div> <!--Instagram div-->
+          <div class="container" style="width: 85%">
+                <button class="open-button" onclick="openLoginForm()">Login</button>
+                <div class="form-popup" id="login">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Login</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+                </form>
+                </div>
+            </div>
+            <br><br>
+            <div>
+                <div class="container" style="width: 85%">
+                <button class="open-button" onclick="openLogoutForm()">Logout</button>
+                <div class="form-popup" id="logout">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Logout</h1>
+
+                    <label for="email"><b>Joey</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Pio</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeLogoutForm()">Close</button>
+                </form>
+                </div>
+                </div>
+            </div>
+            <br><br>
+            <div>
+                <div class="container" style="width: 85%">
+                <button class="open-button" onclick="openLikePostForm()">Liking a post</button>
+                <div class="form-popup" id="likePost">
+                <form action="/action_page.php" class="form-container">
+                    <h1>Liking a post</h1>
+
+                    <label for="email"><b>post</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>post</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeLikePostForm()">Close</button>
+                </form>
+                </div>
+                </div>
+            </div>
+            <br><br>
+            <div>
+                <div class="container" style="width: 85%">
+                <button class="open-button" onclick="openSendDMForm()">Sending yourself a DM</button>
+                <div class="form-popup" id="sendDM">
+                <form action="/action_page.php" class="form-container">
+                    <h1>send DM</h1>
+
+                    <label for="email"><b>Send</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>DM</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeSendDMForm()">Close</button>
+                </form>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
         <component :is="'script'">
-            var id;
-            function user(choice){
-                id = choice;
+            <!--Login-->
+            function openLoginForm() {
+            document.getElementById("login").style.display = "block";
             }
-            function openForm() {
-            document.getElementById(id).style.display = "block";
+            function closeLoginForm() {
+            document.getElementById("login").style.display = "none";
             }
 
-            function closeForm() {
-            document.getElementById(id).style.display = "none";
+            <!--Logout-->
+            function openLogoutForm() {
+            document.getElementById("logout").style.display = "block";
+            }
+            function closeLogoutForm() {
+            document.getElementById("logout").style.display = "none";
+            }
+
+            <!--Like post-->
+            function openLikePostForm() {
+            document.getElementById("likePost").style.display = "block";
+            }
+            function closeLikePostForm() {
+            document.getElementById("likePost").style.display = "none";
+            }
+
+            <!--Sending yourself a DM-->
+            function openSendDMForm() {
+            document.getElementById("sendDM").style.display = "block";
+            }
+            function closeSendDMForm() {
+            document.getElementById("sendDM").style.display = "none";
             }
         </component>
     </body>
