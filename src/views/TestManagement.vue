@@ -7,16 +7,22 @@
                 <button class="open-button" onclick="openLoginForm()">Login</button>
                 <div class="form-popup" id="login">
                 <form action="/action_page.php" class="form-container">
-                    <h1>Login</h1>
+                    <h2>Instagram: Login</h2>
 
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                    <button type="submit" class="btn">Login</button>
+                    <label for="email"><b>Test ID: </b></label>
+                    <br>
+                    <br>
+                    <label for="psw"><b>Passed: </b></label>
+                    <br>
+                    <br>
+                    <label for="email"><b>Date: </b></label>
+                    <br>
+                    <br>
+                    <label for="psw"><b>Time: </b></label>
+                    <br>
+                    <br>
                     <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+                    <button class="btn" onclick="openLogoutForm()">Next Test</button>
                 </form>
                 </div>
             </div>
