@@ -3,12 +3,15 @@
 
     <body>
         <div> <!--Instagram div-->
-            <div class="container" style="width: 85%">
+                  <div class="card" style="width:85%">
+                      <h1>Instagram</h1>
+                  </div>
                 <button class="open-button" onclick="openLoginForm()">Login</button>
                 <div class="form-popup" id="login">
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Login</h2>
-
+                  
+                    
                     <label for="email"><b>Test ID: </b></label>
                     <br>
                     <br>
@@ -86,7 +89,7 @@
                 </div>
                 </div>
             </div>
-        </div>
+        
 <br><br><br>
         <div> <!--Instagram div-->
           <div class="container" style="width: 85%">
@@ -217,11 +220,11 @@
       font-family: 'Courier New', Courier, monospace;
   }
 
-.active {
-    background-color: green;
-}
-.inactive {
-    background-color: red;
+.card {
+  background-color: green;
+  box-shadow: 0 4px 8px 0 rgba(255, 160, 105, 0.32);
+  transition: 0.3s;
+  width: 40%;
 }
 
 .card:hover {
@@ -315,3 +318,4 @@ body {font-family: Arial, Helvetica, sans-serif;}
   opacity: 1;
 }
 </style>
+
