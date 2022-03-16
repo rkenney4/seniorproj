@@ -36,6 +36,13 @@ const router = createRouter({
         requiresAuth: true,
       },
     },
+    {
+      path: "/test-management",
+      component: () => import("../views/TestManagement.vue"),
+      meta:{
+        requiresAuth: true,
+      },
+    },
   ],
 });
 
