@@ -11,11 +11,23 @@
         <a href="#" class="filter_link" data-filter="Facebook">Facebook</a>
       </ul>
 -->
+      <!--This is the code for the search bar -->
+      <div class="search">
+        <form action="#">
+          <input type="text"
+            placeholder="Search Project ..."
+            name="search"
+          >
+            <button type="submit" style="margin:10px">Search</button>
+        </form>
+      </div>
+      <!-- This is the card element for Instagram (First card in the row of cards) -->
       <div class="row">
-        <div class="media instagram"> <!--Instagram div-->
-            <h2 style="color: white">Instagram:</h2>
+        <div class="media-instagram shift"> <!--Instagram div-->
+        
+            <h2> Instagram: </h2>
             <div class="container" style="width: 85%">
-            <button class="open-button" onclick="openLoginForm()">Login</button>
+            <button class="open-button" onclick="openLoginForm()"><b>Login</b></button>
             <div class="form-popup" id="login">
             <form action="/action_page.php" class="form-container">
                 <h2>Instagram: Login</h2>
@@ -39,7 +51,7 @@
             <br><br>
             <div>
                 <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openLogoutForm()">Logout</button>
+                <button class="open-button" onclick="openLogoutForm()"><b>Logout</b></button>
                 <div class="form-popup" id="logout">
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Logout</h2>
@@ -64,7 +76,7 @@
             <br><br>
             <div>
                 <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openLikePostForm()">Liking a post</button>
+                <button class="open-button" onclick="openLikePostForm()"><b>Liking a post</b></button>
                 <div class="form-popup" id="likePost">
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Liking a Post</h2>
@@ -89,7 +101,7 @@
             <br><br>
             <div>
                 <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openSendDMForm()">Sending yourself a DM</button>
+                <button class="open-button" onclick="openSendDMForm()"><b>Sending yourself a DM</b></button>
                 <div class="form-popup" id="sendDM">
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Sending Yourself a DM</h2>
@@ -114,84 +126,7 @@
         </div>
         
 <br>
-        <div class="media facebook"> <!--Facebook div-->
-          <h2 style="color: white">Facebook:</h2>
-          <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openLoginForm()">Login</button>
-                <div class="form-popup" id="login">
-                <form action="/action_page.php" class="form-container">
-                    <h1>Login</h1>
-
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-                    <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
-                </form>
-                </div>
-            </div>
-            <br><br>
-            <div>
-                <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openLogoutForm()">Logout</button>
-                <div class="form-popup" id="logout">
-                <form action="/action_page.php" class="form-container">
-                    <h1>Logout</h1>
-
-                    <label for="email"><b>Joey</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-
-                    <label for="psw"><b>Pio</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                    <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn cancel" onclick="closeLogoutForm()">Close</button>
-                </form>
-                </div>
-                </div>
-            </div>
-            <br><br>
-            <div>
-                <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openLikePostForm()">Liking a post</button>
-                <div class="form-popup" id="likePost">
-                <form action="/action_page.php" class="form-container">
-                    <h1>Liking a post</h1>
-
-                    <label for="email"><b>post</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-
-                    <label for="psw"><b>post</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                    <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn cancel" onclick="closeLikePostForm()">Close</button>
-                </form>
-                </div>
-                </div>
-            </div>
-            <br><br>
-            <div>
-                <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openSendDMForm()">Sending yourself a DM</button>
-                <div class="form-popup" id="sendDM">
-                <form action="/action_page.php" class="form-container">
-                    <h1>send DM</h1>
-
-                    <label for="email"><b>Send</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-
-                    <label for="psw"><b>DM</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                    <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn cancel" onclick="closeSendDMForm()">Close</button>
-                </form>
-                </div>
-                </div>
-            </div>
-        </div>
+        
 
 
         <component :is="'script'">
@@ -267,6 +202,7 @@ $('.filter_link').click(function(e){
  -->
 
  <style scoped>
+   
     th
     {
         font-family: 'Times New Roman', Times, serif;
@@ -278,11 +214,12 @@ $('.filter_link').click(function(e){
       font-family: 'Courier New', Courier, monospace;
   }
 
-.card {
+.media-instagram{
   background-color: green;
-  box-shadow: 0 4px 8px 0 rgba(255, 160, 105, 0.32);
   transition: 0.3s;
-  width: 40%;
+  width: 70vh;
+  height: 70vh;
+  
 }
 
 .card:hover {
@@ -293,7 +230,7 @@ $('.filter_link').click(function(e){
   padding: 2vh 2vh;
 }
 .shift {
-    left: 30vh;
+    left: 50vh;
     right: 40vh;
 }
 .row:after {
