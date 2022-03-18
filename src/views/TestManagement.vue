@@ -26,7 +26,7 @@
         <div class="media-instagram shift"> <!--Instagram div-->
         
             <h2> Instagram: </h2>
-            <div class="container" style="width: 85%">
+            <div class="container" >
             <button class="open-button" onclick="openLoginForm()"><b>Login</b></button>
             <div class="form-popup" id="login">
             <form action="/action_page.php" class="form-container">
@@ -50,7 +50,7 @@
             </div>
             <br><br>
             <div>
-                <div class="container" style="width: 85%">
+                <div class="container" >
                 <button class="open-button" onclick="openLogoutForm()"><b>Logout</b></button>
                 <div class="form-popup" id="logout">
                 <form action="/action_page.php" class="form-container">
@@ -75,7 +75,7 @@
             </div>
             <br><br>
             <div>
-                <div class="container" style="width: 85%">
+                <div class="container" >
                 <button class="open-button" onclick="openLikePostForm()"><b>Liking a post</b></button>
                 <div class="form-popup" id="likePost">
                 <form action="/action_page.php" class="form-container">
@@ -100,7 +100,7 @@
             </div>
             <br><br>
             <div>
-                <div class="container" style="width: 85%">
+                <div class="container" >
                 <button class="open-button" onclick="openSendDMForm()"><b>Sending yourself a DM</b></button>
                 <div class="form-popup" id="sendDM">
                 <form action="/action_page.php" class="form-container">
@@ -124,7 +124,107 @@
                 </div>
             </div>
         </div>
+         <div class="media-instagram shift"> <!--Facebook div-->
         
+            <h2> Instagram: </h2>
+            <div class="container" >
+            <button class="open-button" onclick="openLoginForm()"><b>Login</b></button>
+            <div class="form-popup" id="login">
+            <form action="/action_page.php" class="form-container">
+                <h2>Instagram: Login</h2>
+
+                <label for="email"><b>Test ID: </b></label>
+                <br>
+                <br>
+                <label for="psw"><b>Passed: </b></label>
+                <br>
+                <br>
+                <label for="email"><b>Date: </b></label>
+                <br>
+                <br>
+                <label for="psw"><b>Time: </b></label>
+                <br>
+                <br>
+                <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+            </form>
+            </div>
+            </div>
+            <br><br>
+            <div>
+                <div class="container" >
+                <button class="open-button" onclick="openLogoutForm()"><b>Logout</b></button>
+                <div class="form-popup" id="logout">
+                <form action="/action_page.php" class="form-container">
+                    <h2>Instagram: Logout</h2>
+
+                    <label for="email"><b>Test ID: </b></label>
+                    <br>
+                    <br>
+                    <label for="psw"><b>Passed: </b></label>
+                    <br>
+                    <br>
+                    <label for="email"><b>Date: </b></label>
+                    <br>
+                    <br>
+                    <label for="psw"><b>Time: </b></label>
+                    <br>
+                    <br>
+                    <button type="button" class="btn cancel" onclick="closeLogoutForm()">Close</button>
+                </form>
+                </div>
+                </div>
+            </div>
+            <br><br>
+            <div>
+                <div class="container" >
+                <button class="open-button" onclick="openLikePostForm()"><b>Liking a post</b></button>
+                <div class="form-popup" id="likePost">
+                <form action="/action_page.php" class="form-container">
+                    <h2>Instagram: Liking a Post</h2>
+
+                    <label for="email"><b>Test ID: </b></label>
+                    <br>
+                    <br>
+                    <label for="psw"><b>Passed: </b></label>
+                    <br>
+                    <br>
+                    <label for="email"><b>Date: </b></label>
+                    <br>
+                    <br>
+                    <label for="psw"><b>Time: </b></label>
+                    <br>
+                    <br>
+                    <button type="button" class="btn cancel" onclick="closeLikePostForm()">Close</button>
+                </form>
+                </div>
+                </div>
+            </div>
+            <br><br>
+            <div>
+                <div class="container" >
+                <button class="open-button" onclick="openSendDMForm()"><b>Sending yourself a DM</b></button>
+                <div class="form-popup" id="sendDM">
+                <form action="/action_page.php" class="form-container">
+                    <h2>Instagram: Sending Yourself a DM</h2>
+
+                    <label for="email"><b>Test ID: </b></label>
+                    <br>
+                    <br>
+                    <label for="psw"><b>Passed: </b></label>
+                    <br>
+                    <br>
+                    <label for="email"><b>Date: </b></label>
+                    <br>
+                    <br>
+                    <label for="psw"><b>Time: </b></label>
+                    <br>
+                    <br>
+                    <button type="button" class="btn cancel" onclick="closeSendDMForm()">Close</button>
+                </form>
+                </div>
+                </div>
+            </div>
+        </div>
 <br>
         
 
@@ -217,8 +317,10 @@ $('.filter_link').click(function(e){
 .media-instagram{
   background-color: green;
   transition: 0.3s;
-  width: 70vh;
-  height: 70vh;
+  width: 50vh;
+  height: 50vh;
+  display:inline-block;
+  margin:5vh;
   
 }
 
@@ -226,12 +328,9 @@ $('.filter_link').click(function(e){
   box-shadow: 0 8px 16px 0 white;
 }
 
-.container {
-  padding: 2vh 2vh;
-}
 .shift {
-    left: 50vh;
-    right: 40vh;
+    left: 15vh;
+    right: 60vh;
 }
 .row:after {
   content: "";
@@ -256,7 +355,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   border: none;
   cursor: pointer;
   opacity: 0.8;
-  position: fixed;
+
   width: 280px;
 }
 
@@ -313,11 +412,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 * {
   box-sizing: border-box;
 }
