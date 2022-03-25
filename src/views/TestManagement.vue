@@ -27,8 +27,8 @@
         
             <h2> Instagram: </h2>
             <div class="container" >
-            <button class="open-button" onclick="openLoginForm()"><b>Login</b></button>
-            <div class="form-popup" id="login">
+            <button class="open-button" onclick="openLoginInstagramForm()"><b>Login</b></button>
+            <div class="form-popup" id="loginInstagram">
             <form action="/action_page.php" class="form-container">
                 <h2>Instagram: Login</h2>
 
@@ -44,15 +44,15 @@
                 <label for="psw"><b>Time: </b></label>
                 <br>
                 <br>
-                <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+                <button type="button" class="btn cancel" onclick="closeLoginInstagramForm()">Close</button>
             </form>
             </div>
             </div>
             <br><br>
             <div>
                 <div class="container" >
-                <button class="open-button" onclick="openLogoutForm()"><b>Logout</b></button>
-                <div class="form-popup" id="logout">
+                <button class="open-button" onclick="openLogoutInstagramForm()"><b>Logout</b></button>
+                <div class="form-popup" id="logoutInstagram">
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Logout</h2>
 
@@ -68,7 +68,7 @@
                     <label for="psw"><b>Time: </b></label>
                     <br>
                     <br>
-                    <button type="button" class="btn cancel" onclick="closeLogoutForm()">Close</button>
+                    <button type="button" class="btn cancel" onclick="closeLogoutInstagramForm()">Close</button>
                 </form>
                 </div>
                 </div>
@@ -76,8 +76,8 @@
             <br><br>
             <div>
                 <div class="container" >
-                <button class="open-button" onclick="openLikePostForm()"><b>Liking a post</b></button>
-                <div class="form-popup" id="likePost">
+                <button class="open-button" onclick="openLikePostInstagramForm()"><b>Liking a post</b></button>
+                <div class="form-popup" id="likePostInstagram">
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Liking a Post</h2>
 
@@ -93,7 +93,7 @@
                     <label for="psw"><b>Time: </b></label>
                     <br>
                     <br>
-                    <button type="button" class="btn cancel" onclick="closeLikePostForm()">Close</button>
+                    <button type="button" class="btn cancel" onclick="closeLikePostInstagramForm()">Close</button>
                 </form>
                 </div>
                 </div>
@@ -101,8 +101,8 @@
             <br><br>
             <div>
                 <div class="container" >
-                <button class="open-button" onclick="openSendDMForm()"><b>Sending yourself a DM</b></button>
-                <div class="form-popup" id="sendDM">
+                <button class="open-button" onclick="openSendDMInstagramForm()"><b>Sending yourself a DM</b></button>
+                <div class="form-popup" id="sendDMInstagram">
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Sending Yourself a DM</h2>
 
@@ -118,7 +118,7 @@
                     <label for="psw"><b>Time: </b></label>
                     <br>
                     <br>
-                    <button type="button" class="btn cancel" onclick="closeSendDMForm()">Close</button>
+                    <button type="button" class="btn cancel" onclick="closeSendDMInstagramForm()">Close</button>
                 </form>
                 </div>
                 </div>
@@ -126,12 +126,12 @@
         </div>
          <div class="media-instagram shift"> <!--Facebook div-->
         
-            <h2> Instagram: </h2>
+            <h2> Facebook: </h2>
             <div class="container" >
-            <button class="open-button" onclick="openLoginForm()"><b>Login</b></button>
-            <div class="form-popup" id="login">
+            <button class="open-button" onclick="openLoginFacebookForm()"><b>Login</b></button>
+            <div class="form-popup" id="loginFacebook">
             <form action="/action_page.php" class="form-container">
-                <h2>Instagram: Login</h2>
+                <h2>Facebook: Login</h2>
 
                 <label for="email"><b>Test ID: </b></label>
                 <br>
@@ -145,17 +145,17 @@
                 <label for="psw"><b>Time: </b></label>
                 <br>
                 <br>
-                <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+                <button type="button" class="btn cancel" onclick="closeLoginFacebookForm()">Close</button>
             </form>
             </div>
             </div>
             <br><br>
             <div>
                 <div class="container" >
-                <button class="open-button" onclick="openLogoutForm()"><b>Logout</b></button>
-                <div class="form-popup" id="logout">
+                <button class="open-button" onclick="openLogoutFacebookForm()"><b>Logout</b></button>
+                <div class="form-popup" id="logoutFacebook">
                 <form action="/action_page.php" class="form-container">
-                    <h2>Instagram: Logout</h2>
+                    <h2>Facebook: Logout</h2>
 
                     <label for="email"><b>Test ID: </b></label>
                     <br>
@@ -169,7 +169,7 @@
                     <label for="psw"><b>Time: </b></label>
                     <br>
                     <br>
-                    <button type="button" class="btn cancel" onclick="closeLogoutForm()">Close</button>
+                    <button type="button" class="btn cancel" onclick="closeLogoutFacebookForm()">Close</button>
                 </form>
                 </div>
                 </div>
@@ -177,10 +177,10 @@
             <br><br>
             <div>
                 <div class="container" >
-                <button class="open-button" onclick="openLikePostForm()"><b>Liking a post</b></button>
-                <div class="form-popup" id="likePost">
+                <button class="open-button" onclick="openLikePostFacebookForm()"><b>Liking a post</b></button>
+                <div class="form-popup" id="likePostFacebook">
                 <form action="/action_page.php" class="form-container">
-                    <h2>Instagram: Liking a Post</h2>
+                    <h2>Facebook: Liking a Post</h2>
 
                     <label for="email"><b>Test ID: </b></label>
                     <br>
@@ -194,7 +194,7 @@
                     <label for="psw"><b>Time: </b></label>
                     <br>
                     <br>
-                    <button type="button" class="btn cancel" onclick="closeLikePostForm()">Close</button>
+                    <button type="button" class="btn cancel" onclick="closeLikePostFacebookForm()">Close</button>
                 </form>
                 </div>
                 </div>
@@ -202,10 +202,10 @@
             <br><br>
             <div>
                 <div class="container" >
-                <button class="open-button" onclick="openSendDMForm()"><b>Sending yourself a DM</b></button>
-                <div class="form-popup" id="sendDM">
+                <button class="open-button" onclick="openSendDMFacebookForm()"><b>Sending yourself a DM</b></button>
+                <div class="form-popup" id="sendDMFacebook">
                 <form action="/action_page.php" class="form-container">
-                    <h2>Instagram: Sending Yourself a DM</h2>
+                    <h2>Facebook: Sending Yourself a DM</h2>
 
                     <label for="email"><b>Test ID: </b></label>
                     <br>
@@ -219,7 +219,7 @@
                     <label for="psw"><b>Time: </b></label>
                     <br>
                     <br>
-                    <button type="button" class="btn cancel" onclick="closeSendDMForm()">Close</button>
+                    <button type="button" class="btn cancel" onclick="closeSendDMFacebookForm()">Close</button>
                 </form>
                 </div>
                 </div>
@@ -230,36 +230,68 @@
 
 
         <component :is="'script'">
-            <!--Login-->
-            function openLoginForm() {
-            document.getElementById("login").style.display = "block";
+            <!--Login Instagram-->
+            function openLoginInstagramForm() {
+            document.getElementById("loginInstagram").style.display = "block";
             }
-            function closeLoginForm() {
-            document.getElementById("login").style.display = "none";
-            }
-
-            <!--Logout-->
-            function openLogoutForm() {
-            document.getElementById("logout").style.display = "block";
-            }
-            function closeLogoutForm() {
-            document.getElementById("logout").style.display = "none";
+            function closeLoginInstagramForm() {
+            document.getElementById("loginInstagram").style.display = "none";
             }
 
-            <!--Like post-->
-            function openLikePostForm() {
-            document.getElementById("likePost").style.display = "block";
+            <!--Logout Instagram-->
+            function openLogoutInstagramForm() {
+            document.getElementById("logoutInstagram").style.display = "block";
             }
-            function closeLikePostForm() {
-            document.getElementById("likePost").style.display = "none";
+            function closeLogoutInstagramForm() {
+            document.getElementById("logoutInstagram").style.display = "none";
             }
 
-            <!--Sending yourself a DM-->
-            function openSendDMForm() {
-            document.getElementById("sendDM").style.display = "block";
+            <!--Like post Instagram-->
+            function openLikePostInstagramForm() {
+            document.getElementById("likePostInstagram").style.display = "block";
             }
-            function closeSendDMForm() {
-            document.getElementById("sendDM").style.display = "none";
+            function closeLikePostInstagramForm() {
+            document.getElementById("likePostInstagram").style.display = "none";
+            }
+
+            <!--Sending yourself a DM Instagram-->
+            function openSendDMInstagramForm() {
+            document.getElementById("sendDMInstagram").style.display = "block";
+            }
+            function closeSendDMInstagramForm() {
+            document.getElementById("sendDMInstagram").style.display = "none";
+            }
+
+            <!--Login Facebook-->
+            function openLoginFacebookForm() {
+            document.getElementById("loginFacebook").style.display = "block";
+            }
+            function closeLoginFacebookForm() {
+            document.getElementById("loginFacebook").style.display = "none";
+            }
+
+            <!--Logout Facebook-->
+            function openLogoutFacebookForm() {
+            document.getElementById("logoutFacebook").style.display = "block";
+            }
+            function closeLogoutFacebookForm() {
+            document.getElementById("logoutFacebook").style.display = "none";
+            }
+
+            <!--Like post Facebook-->
+            function openLikePostFacebookForm() {
+            document.getElementById("likePostFacebook").style.display = "block";
+            }
+            function closeLikePostFacebookForm() {
+            document.getElementById("likePostFacebook").style.display = "none";
+            }
+
+            <!--Sending yourself a DM Facebook-->
+            function openSendDMFacebookForm() {
+            document.getElementById("sendDMFacebook").style.display = "block";
+            }
+            function closeSendDMFacebookForm() {
+            document.getElementById("sendDMFacebook").style.display = "none";
             }
             
         </component>
