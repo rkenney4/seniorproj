@@ -32,19 +32,33 @@
             <form action="/action_page.php" class="form-container">
                 <h2>Instagram: Login</h2>
 
-                <label for="email"><b>Test ID: </b></label>
+                <label for="email"><b>Steps:</b></label>
+                <p>1.	Go to website: </p>
+                <form action="https://www.instagram.com/" target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2.	Enter your email in the ‘phone number, username, or email’ field <b>smdsouza@oakland.edu</b></p>
+                <p>3.	Enter your password in the ‘Password’ field <b>CSI4999Capstone</b></p>
+                <p>4.	If you are logging in for the first time, after step 3, choose whether you would like to save your login information.</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
                 <br>
                 <br>
-                <label for="psw"><b>Passed: </b></label>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
                 <br>
                 <br>
-                <label for="email"><b>Date: </b></label>
-                <br>
-                <br>
-                <label for="psw"><b>Time: </b></label>
-                <br>
-                <br>
-                <button type="button" class="btn cancel" onclick="closeLoginInstagramForm()">Close</button>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeLoginInstagramForm()">Close</button>
+                </div>
             </form>
             </div>
             </div>
@@ -232,10 +246,15 @@
         <component :is="'script'">
             <!--Login Instagram-->
             function openLoginInstagramForm() {
-            document.getElementById("loginInstagram").style.display = "block";
+              document.getElementById("loginInstagram").style.display = "block";
             }
             function closeLoginInstagramForm() {
-            document.getElementById("loginInstagram").style.display = "none";
+              document.getElementById("loginInstagram").style.display = "none";
+              document.getElementById("loginInstagram").reset();
+            }
+            function submitLoginInstagramForm() {
+              document.getElementById("loginInstagram").submit();
+              document.getElementById("loginInstagram").reset();
             }
 
             <!--Logout Instagram-->
@@ -293,7 +312,17 @@
             function closeSendDMFacebookForm() {
             document.getElementById("sendDMFacebook").style.display = "none";
             }
-            
+            <!--
+            boolean result;
+            var message;
+
+            function choose(choice){
+              result = choice;
+            }
+            function message(choice){
+              message = choice;
+            }
+            -->
         </component>
       </div>
     </body>
@@ -403,7 +432,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
+  width: 70vh;
+  height: 100vh;
   padding: 10px;
   background-color: white;
 }
@@ -428,16 +458,25 @@ body {font-family: Arial, Helvetica, sans-serif;}
   background-color: #04AA6D;
   color: white;
   padding: 16px 20px;
-  border: none;
+  border: 2px solid white;
   cursor: pointer;
-  width: 100%;
+  width: 45%;
   margin-bottom:10px;
   opacity: 0.8;
+  font-weight: bold;
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: red;
+}
+.form-container .submit {
+  background-color: #04AA6D;
+}
+
+.form-container .link {
+  background-color: gold;
+  color: #202125;
 }
 
 /* Add some hover effects to buttons */
@@ -481,5 +520,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 #myUL li a:hover:not(.header) {
   background-color: #eee;
 }
+
 </style>
 
