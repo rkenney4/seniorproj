@@ -2,19 +2,19 @@
 <div id="nav" class="left">
   <nav>
       <form class="home">
-        <button class="button line" type="submit" style="margin:15px"><router-link to="/">Home</router-link> </button>
+        <router-link to="/"><button class="button line" type="submit" style="margin:15px">Home</button></router-link>
         <br>
         <br>
-        <button class="button line" type="submit" style="margin:15px"><router-link to="/user-details">User Details</router-link></button>
+        <router-link to="/user-details"><button class="button line" type="submit" style="margin:15px">User Details</button></router-link>
         <br>
         <br>
-        <button class="button line" type="submit" style="margin:15px"><router-link to="/user-management">User Management</router-link></button>
+        <router-link to="/user-management"><button class="button line" type="submit" style="margin:15px">User Management</button></router-link>
         <br>
         <br>
-        <button class="button line" type="submit" style="margin:15px"><router-link to="/project-management">Project Management</router-link></button>
+        <router-link to="/project-management"><button class="button line" type="submit" style="margin:15px">Project Management</button></router-link>
         <br>
         <br>
-        <button class="button line" type="submit" style="margin:15px"><router-link to="/test-management">Test Management</router-link></button>
+        <router-link to="/test-management"><button class="button line" type="submit" style="margin:15px">Test Management</button></router-link>
       </form>
   </nav>
 </div>
@@ -22,13 +22,13 @@
 <div id="nav" class="right">
   <nav>
     <form>
-            <button class="button line" type="submit" style="margin:15px" @click="handleSignOut" v-if="isLoggedIn"><router-link to="/">Sign Out</router-link></button>
+            <router-link to="/"><button class="button line" type="submit" style="margin:15px" @click="handleSignOut" v-if="isLoggedIn">Sign Out</button></router-link>
             <br>
             <br>
-            <button class="button line" type="submit" style="margin:15px" v-if="!isLoggedIn"><router-link to="/sign-in">Sign In</router-link></button>
+            <router-link to="/sign-in"><button class="button line" type="submit" style="margin:15px" v-if="!isLoggedIn">Sign In</button></router-link>
             <br>
             <br>
-            <button class="button line" type="submit" style="margin:15px" v-if="!isLoggedIn"><router-link to="/register">Register</router-link> </button>
+            <router-link to="/register"><button class="button line" type="submit" style="margin:15px" v-if="!isLoggedIn">Register</button></router-link>
     </form>
   </nav>
 </div>
@@ -110,6 +110,7 @@ body
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
+  color: #bec1c6;
 }
 button:hover {
   box-shadow: 0 8px 16px 0 white;
