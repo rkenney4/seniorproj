@@ -27,8 +27,8 @@
         
             <h2> Instagram: </h2>
             <div class="container" >
-            <button class="open-button" onclick="openLoginForm()"><b>Login</b></button>
-            <div class="form-popup" id="login">
+            <button class="open-button" onclick="openLoginInstagramForm()"><b>Login</b></button>
+            <div class="form-popup"  id="loginInstagram">
             <form action="/action_page.php" class="form-container">
                 <h2>Instagram: Login</h2>
 
@@ -44,15 +44,15 @@
                 <label for="psw"><b>Time: </b></label>
                 <br>
                 <br>
-                <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+                <button type="button" class="btn cancel" onclick="closeLoginIGForm()">Close</button>
             </form>
             </div>
             </div>
             <br><br>
             <div>
                 <div class="container" >
-                <button class="open-button" onclick="openLogoutForm()"><b>Logout</b></button>
-                <div class="form-popup" id="logout">
+                <button class="open-button" onclick="openLogoutInstagramForm()"><b>Logout</b></button>
+                <div class="form-popup" id="logoutInstagram">
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Logout</h2>
 
@@ -68,7 +68,7 @@
                     <label for="psw"><b>Time: </b></label>
                     <br>
                     <br>
-                    <button type="button" class="btn cancel" onclick="closeLogoutForm()">Close</button>
+                    <button type="button" class="btn cancel" onclick="closeLogoutInstagramForm()">Close</button>
                 </form>
                 </div>
                 </div>
@@ -76,8 +76,8 @@
             <br><br>
             <div>
                 <div class="container" >
-                <button class="open-button" onclick="openLikePostForm()"><b>Liking a post</b></button>
-                <div class="form-popup" id="likePost">
+                <button class="open-button" onclick="openLikePostInstagramForm()"><b>Liking a post</b></button>
+                <div class="form-popup" id="likePostInstagram">
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Liking a Post</h2>
 
@@ -93,7 +93,7 @@
                     <label for="psw"><b>Time: </b></label>
                     <br>
                     <br>
-                    <button type="button" class="btn cancel" onclick="closeLikePostForm()">Close</button>
+                    <button type="button" class="btn cancel" onclick="closeLikePostInstagramForm()">Close</button>
                 </form>
                 </div>
                 </div>
@@ -101,8 +101,8 @@
             <br><br>
             <div>
                 <div class="container" >
-                <button class="open-button" onclick="openSendDMForm()"><b>Sending yourself a DM</b></button>
-                <div class="form-popup" id="sendDM">
+                <button class="open-button" onclick="openSendDMInstagramForm()"><b>Sending yourself a DM</b></button>
+                <div class="form-popup" id="sendDMInstagram">
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Sending Yourself a DM</h2>
 
@@ -118,20 +118,20 @@
                     <label for="psw"><b>Time: </b></label>
                     <br>
                     <br>
-                    <button type="button" class="btn cancel" onclick="closeSendDMForm()">Close</button>
+                    <button type="button" class="btn cancel" onclick="closeSendDMInstagramForm()">Close</button>
                 </form>
                 </div>
                 </div>
             </div>
         </div>
-         <div class="media-instagram shift"> <!--Facebook div-->
-        
-            <h2> Instagram: </h2>
+        <!--Facebook div-->
+         <div class="media-instagram shift">
+            <h2> Facebook: </h2>
             <div class="container" >
             <button class="open-button" onclick="openLoginForm()"><b>Login</b></button>
             <div class="form-popup" id="login">
             <form action="/action_page.php" class="form-container">
-                <h2>Instagram: Login</h2>
+                <h2>Facebook: Login</h2>
 
                 <label for="email"><b>Test ID: </b></label>
                 <br>
@@ -155,7 +155,7 @@
                 <button class="open-button" onclick="openLogoutForm()"><b>Logout</b></button>
                 <div class="form-popup" id="logout">
                 <form action="/action_page.php" class="form-container">
-                    <h2>Instagram: Logout</h2>
+                    <h2>Facebook: Logout</h2>
 
                     <label for="email"><b>Test ID: </b></label>
                     <br>
@@ -180,7 +180,7 @@
                 <button class="open-button" onclick="openLikePostForm()"><b>Liking a post</b></button>
                 <div class="form-popup" id="likePost">
                 <form action="/action_page.php" class="form-container">
-                    <h2>Instagram: Liking a Post</h2>
+                    <h2>Facebook: Liking a Post</h2>
 
                     <label for="email"><b>Test ID: </b></label>
                     <br>
@@ -205,7 +205,7 @@
                 <button class="open-button" onclick="openSendDMForm()"><b>Sending yourself a DM</b></button>
                 <div class="form-popup" id="sendDM">
                 <form action="/action_page.php" class="form-container">
-                    <h2>Instagram: Sending Yourself a DM</h2>
+                    <h2>Facebook: Sending Yourself a DM</h2>
 
                     <label for="email"><b>Test ID: </b></label>
                     <br>
@@ -228,79 +228,65 @@
 <br>
         
 
-
         <component :is="'script'">
-            <!--Login-->
-            function openLoginForm() {
-            document.getElementById("login").style.display = "block";
-            }
-            function closeLoginForm() {
-            document.getElementById("login").style.display = "none";
-            }
-
-            <!--Logout-->
-            function openLogoutForm() {
-            document.getElementById("logout").style.display = "block";
-            }
-            function closeLogoutForm() {
-            document.getElementById("logout").style.display = "none";
-            }
-
-            <!--Like post-->
-            function openLikePostForm() {
-            document.getElementById("likePost").style.display = "block";
-            }
-            function closeLikePostForm() {
-            document.getElementById("likePost").style.display = "none";
-            }
-
-            <!--Sending yourself a DM-->
-            function openSendDMForm() {
-            document.getElementById("sendDM").style.display = "block";
-            }
-            function closeSendDMForm() {
-            document.getElementById("sendDM").style.display = "none";
-            }
+            <!--Instagram Login Form-->
             
-        </component>
+            function openLoginInstagramForm() // Function to open the login form for instagram
+            {
+              alert("Test");
+            }
+            function closeLoginIGForm() // Function to close the login form for instagram
+            {
+              document.getElementById('loginInstagram').style.display = "none";
+            }
+
+            <!--Instagram Logout Form-->
+            function openLogoutInstagramForm() // Function to open the logout form for instagram
+            {
+              console.log("Test");
+            }
+            function closeLogoutInstagramForm() // Function to close the logout form for instagram
+            {
+              document.getElementById("logout").style.display = "none";
+            }
+
+            <!--Instagram Like Post Form-->
+            function openLikePostInstagramForm() // Function to open the like post form for instagram
+            {
+              document.getElementById("likePostInstagram").style.display = "block";
+            }
+            function closeLikePostInstagramForm() // Function to close the like post form for instagram
+            {
+              document.getElementById("likePostInstagram").style.display = "none";
+            }
+
+            <!--Instagram Sending yourself a DM Form-->
+            function openSendDMInstagramForm() // Function to open the send a DM form for instagram
+            {
+              document.getElementById("sendDMInstagram").style.display = "block";
+            }
+            function closeSendDMInstagramForm() // Function to close the send a DM form for instagram
+            {
+              document.getElementById("sendDMInstagram").style.display = "none";
+            }
+
+         <!--Facebook Login Form-->
+           function openForm(id) // Function to open the login form for instagram
+           {
+              document.getElementById(id).style.display = "block";
+           }
+          
+           function closeForm(id) // Function to close the login form for instagram
+           {
+              document.getElementById(id).style.display = "none";
+           }
+
+            
+      </component>
       </div>
     </body>
  </template>
- <!--
- <script>
- function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-var $mediaElements = $('.media');
-
-$('.filter_link').click(function(e){
-    e.preventDefault();
-    // get the category from the attribute
-    var filterVal = $(this).data('filter');
-
-    if(filterVal === 'all'){
-      $mediaElements.show();
-    }else{
-       // hide all then filter the ones to show
-       $mediaElements.hide().filter('.' + filterVal).show();
-    }
-});
- </script>
- -->
-
+ 
  <style scoped>
    
     th
