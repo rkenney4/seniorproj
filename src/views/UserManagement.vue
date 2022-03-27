@@ -279,8 +279,8 @@
   padding: 2vh 2vh;
 }
 .shift {
-    left: 20%;
-    right: 30%;
+    left: 50vh;
+    right: 40vh;
 }
 .row:after {
   content: "";

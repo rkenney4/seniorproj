@@ -8,225 +8,422 @@
       <ul id="myUL">
         <a href="#" class="filter_link" data-filter="All">All</a> 
         <a href="#" class="filter_link" data-filter="Instagram">Instagram</a> 
-        <a href="#" class="filter_link" data-filter="Facebook">Facebook</a>
+        <a href="#" class="filter_link" data-filter="Twitter">Twitter</a>
       </ul>
 -->
+      <!--This is the code for the search bar -->
+      <div class="search">
+        <form action="#">
+          <input type="text"
+            placeholder="Search Project ..."
+            name="search"
+          >
+            <button type="submit" style="margin:10px">Search</button>
+        </form>
+      </div>
+      <!-- This is the card element for Instagram (First card in the row of cards) -->
       <div class="row">
-        <div class="media instagram"> <!--Instagram div-->
-            <h2 style="color: white">Instagram:</h2>
-            <div class="container" style="width: 85%">
-            <button class="open-button" onclick="openLoginForm()">Login</button>
-            <div class="form-popup" id="login">
+        <div class="media-instagram shift"> <!--Instagram div-->
+        
+            <h2> Instagram: </h2>
+            <div class="container" >
+            <button class="open-button" onclick="openLoginInstagramForm()"><b>Login</b></button>
+            <div class="form-popup" id="loginInstagram">
             <form action="/action_page.php" class="form-container">
                 <h2>Instagram: Login</h2>
 
-                <label for="email"><b>Test ID: </b></label>
+                <label for="email"><b>Steps:</b></label>
+                <p>1.	Go to website: </p>
+                <form action="https://www.instagram.com/" target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2.	Enter your email in the ‘phone number, username, or email’ field <b>smdsouza@oakland.edu</b></p>
+                <p>3.	Enter your password in the ‘Password’ field <b>CSI4999Capstone</b></p>
+                <p>4.	If you are logging in for the first time, after step 3, choose whether you would like to save your login information.</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
                 <br>
                 <br>
-                <label for="psw"><b>Passed: </b></label>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
                 <br>
                 <br>
-                <label for="email"><b>Date: </b></label>
-                <br>
-                <br>
-                <label for="psw"><b>Time: </b></label>
-                <br>
-                <br>
-                <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeLoginInstagramForm()">Close</button>
+                </div>
             </form>
             </div>
             </div>
             <br><br>
             <div>
-                <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openLogoutForm()">Logout</button>
-                <div class="form-popup" id="logout">
+                <div class="container" >
+                <button class="open-button" onclick="openLogoutInstagramForm()"><b>Logout</b></button>
+                <div class="form-popup" id="logoutInstagram">
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Logout</h2>
 
-                    <label for="email"><b>Test ID: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Passed: </b></label>
-                    <br>
-                    <br>
-                    <label for="email"><b>Date: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Time: </b></label>
-                    <br>
-                    <br>
-                    <button type="button" class="btn cancel" onclick="closeLogoutForm()">Close</button>
+                    <p>1.	Go to website: </p>
+                <form action="https://www.instagram.com/" target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2. Click on your display profile in the upper right hand corner.</p>
+                <p>3.	Click the ‘Log out’ button</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
+                <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeLogoutInstagramForm()">Close</button>
+                </div>
                 </form>
                 </div>
                 </div>
             </div>
             <br><br>
             <div>
-                <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openLikePostForm()">Liking a post</button>
-                <div class="form-popup" id="likePost">
+                <div class="container" >
+                <button class="open-button" onclick="openLikePostInstagramForm()"><b>Liking a post</b></button>
+                <div class="form-popup" id="likePostInstagram">
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Liking a Post</h2>
 
-                    <label for="email"><b>Test ID: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Passed: </b></label>
-                    <br>
-                    <br>
-                    <label for="email"><b>Date: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Time: </b></label>
-                    <br>
-                    <br>
-                    <button type="button" class="btn cancel" onclick="closeLikePostForm()">Close</button>
+                    <p>1.	Go to website: </p>
+                <form action="https://www.instagram.com/" target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2. Go to a photo or video that you want to like</p>
+                <p>3.	Double click on the photo or video</p>
+                <p>4.	After performing step 2, a heart will display on the photo or video that you double clicked on</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
+                <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeLikePostInstagramForm()">Close</button>
+                </div>
                 </form>
                 </div>
                 </div>
             </div>
             <br><br>
             <div>
-                <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openSendDMForm()">Sending yourself a DM</button>
-                <div class="form-popup" id="sendDM">
+                <div class="container" >
+                <button class="open-button" onclick="openSendDMInstagramForm()"><b>Sending yourself a DM</b></button>
+                <div class="form-popup" id="sendDMInstagram">
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Sending Yourself a DM</h2>
 
-                    <label for="email"><b>Test ID: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Passed: </b></label>
-                    <br>
-                    <br>
-                    <label for="email"><b>Date: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Time: </b></label>
-                    <br>
-                    <br>
-                    <button type="button" class="btn cancel" onclick="closeSendDMForm()">Close</button>
+                    <p>1.	Go to website: </p>
+                <form action="https://www.instagram.com/" target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2.	Click on the message bubble in the upper right hand corner</p>
+                <p>3.	Click on the paper and pencil icon next to your username</p>
+                <p>4.	Type “smdsouza123” in the ‘To’ field</p>
+                <p>5.	Click the circle next to “smdsouza123”</p>
+                <p>6.	Click the ‘next’ button in the top right corner</p>
+                <p>7.	Type your message in the ‘Message’ field</p>
+                <p>8.	Click the send button on the right of the ‘Message’ field</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
+                <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeSendDMInstagramForm()">Close</button>
+                </div>
                 </form>
                 </div>
                 </div>
             </div>
         </div>
+         <div class="media-instagram shift"> <!--Twitter div-->
         
-<br>
-        <div class="media facebook"> <!--Facebook div-->
-          <h2 style="color: white">Facebook:</h2>
-          <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openLoginForm()">Login</button>
-                <div class="form-popup" id="login">
-                <form action="/action_page.php" class="form-container">
-                    <h1>Login</h1>
+            <h2> Twitter: </h2>
+            <div class="container" >
+            <button class="open-button" onclick="openLoginTwitterForm()"><b>Login</b></button>
+            <div class="form-popup" id="loginTwitter">
+            <form action="/action_page.php" class="form-container">
+                <h2>Twitter: Login</h2>
 
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-                    <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+                <label for="email"><b>Steps:</b></label>
+                <p>1.	Go to website: </p>
+                <form action="https://www.instagram.com/" target="_blank">
+                  <input type="submit" value="Website" class="btn link">
                 </form>
+                <p>2.	Click on the ‘Sign in’ button below the text that says “Already Have An Account”</p>
+                <p>3.	Type your email in the text field that says ‘Phone, email, or username’ (smdsouza@oakland.edu)</p>
+                <p>4.	Click on the ‘Next’ button below the text field</p>
+                <p>5.	Enter your password in the ‘Password’ text field (CSI4999Capstone)</p>
+                <p>6.	Click on the ‘Log in’ button</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
+                <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginTwitterForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeLoginTwitterForm()">Close</button>
+                </div>
+            </form>
+            </div>
+            </div>
+            <br><br>
+            <div>
+                <div class="container" >
+                <button class="open-button" onclick="openLogoutTwitterForm()"><b>Logout</b></button>
+                <div class="form-popup" id="logoutTwitter">
+                <form action="/action_page.php" class="form-container">
+                    <h2>Twitter: Logout</h2>
+
+                    <p>1.	Go to website: </p>
+                <form action="https://twitter.com/home " target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2.	Click on the ‘…’ next to your username at the bottom left of the screen</p>
+                <p>3.	Click on the ‘Log out’ button below the ‘Add an Existing account’ button</p>
+                <p>4.	Click on the ‘Log out’ button again to confirm that you would like to log out</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
+                <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginTwitterForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeLogoutTwitterForm()">Close</button>
+                </div>
+                </form>
+                </div>
                 </div>
             </div>
             <br><br>
             <div>
-                <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openLogoutForm()">Logout</button>
-                <div class="form-popup" id="logout">
+                <div class="container" >
+                <button class="open-button" onclick="openLikePostTwitterForm()"><b>Liking a post</b></button>
+                <div class="form-popup" id="likePostTwitter">
                 <form action="/action_page.php" class="form-container">
-                    <h1>Logout</h1>
+                    <h2>Twitter: Liking a Post</h2>
 
-                    <label for="email"><b>Joey</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-
-                    <label for="psw"><b>Pio</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                    <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn cancel" onclick="closeLogoutForm()">Close</button>
+                    <p>1.	Go to website: </p>
+                <form action="https://twitter.com/home " target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2.	Go to a post that you want to like</p>
+                <p>3.	Below the post you will see a heart symbol</p>
+                <p>4.	Click on the heart symbol to like the post</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
+                <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginTwitterForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeLikePostTwitterForm()">Close</button>
+                </div>
                 </form>
                 </div>
                 </div>
             </div>
             <br><br>
             <div>
-                <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openLikePostForm()">Liking a post</button>
-                <div class="form-popup" id="likePost">
+                <div class="container" >
+                <button class="open-button" onclick="openSendDMTwitterForm()"><b>Sending yourself a DM</b></button>
+                <div class="form-popup" id="sendDMTwitter">
                 <form action="/action_page.php" class="form-container">
-                    <h1>Liking a post</h1>
+                    <h2>Twitter: Sending Yourself a DM</h2>
 
-                    <label for="email"><b>post</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-
-                    <label for="psw"><b>post</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                    <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn cancel" onclick="closeLikePostForm()">Close</button>
+                    <p>1.	Go to website: </p>
+                <form action="https://twitter.com/home " target="_blank">
+                  <input type="submit" value="Website" class="btn link">
                 </form>
+                <p>2.	Click on the ‘Messages’ button on the left of the screen</p>
+                <p>3.	In the ‘search people’ text field, type your username (@d_saliel)</p>
+                <p>4.	Click on the row that has your username in the list</p>
+                <p>5.	Click on the ‘Next’ button on the upper right-hand corner of the screen</p>
+                <p>6.	Type your message in the ‘Start a new message’ text field below</p>
+                <p>7.	Click on the flying envelope button next to the smiley face emoji, or press the enter button on your keyboard</p>
+                <p>8.	You will see the message that you sent to yourself under your Messages inbox</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
+                <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginTwitterForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeSendDMTwitterForm()">Close</button>
                 </div>
-                </div>
-            </div>
-            <br><br>
-            <div>
-                <div class="container" style="width: 85%">
-                <button class="open-button" onclick="openSendDMForm()">Sending yourself a DM</button>
-                <div class="form-popup" id="sendDM">
-                <form action="/action_page.php" class="form-container">
-                    <h1>send DM</h1>
-
-                    <label for="email"><b>Send</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
-
-                    <label for="psw"><b>DM</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                    <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn cancel" onclick="closeSendDMForm()">Close</button>
                 </form>
                 </div>
                 </div>
             </div>
         </div>
+<br>
+        
 
 
         <component :is="'script'">
-            <!--Login-->
-            function openLoginForm() {
-            document.getElementById("login").style.display = "block";
+            <!--Login Instagram-->
+            function openLoginInstagramForm() {
+              document.getElementById("loginInstagram").style.display = "block";
             }
-            function closeLoginForm() {
-            document.getElementById("login").style.display = "none";
+            function closeLoginInstagramForm() {
+              document.getElementById("loginInstagram").style.display = "none";
+              document.getElementById("loginInstagram").reset();
             }
-
-            <!--Logout-->
-            function openLogoutForm() {
-            document.getElementById("logout").style.display = "block";
-            }
-            function closeLogoutForm() {
-            document.getElementById("logout").style.display = "none";
+            function submitLoginInstagramForm() {
+              document.getElementById("loginInstagram").submit();
+              document.getElementById("loginInstagram").reset();
             }
 
-            <!--Like post-->
-            function openLikePostForm() {
-            document.getElementById("likePost").style.display = "block";
+            <!--Logout Instagram-->
+            function openLogoutInstagramForm() {
+            document.getElementById("logoutInstagram").style.display = "block";
             }
-            function closeLikePostForm() {
-            document.getElementById("likePost").style.display = "none";
+            function closeLogoutInstagramForm() {
+            document.getElementById("logoutInstagram").style.display = "none";
             }
 
-            <!--Sending yourself a DM-->
-            function openSendDMForm() {
-            document.getElementById("sendDM").style.display = "block";
+            <!--Like post Instagram-->
+            function openLikePostInstagramForm() {
+            document.getElementById("likePostInstagram").style.display = "block";
             }
-            function closeSendDMForm() {
-            document.getElementById("sendDM").style.display = "none";
+            function closeLikePostInstagramForm() {
+            document.getElementById("likePostInstagram").style.display = "none";
             }
-            
+
+            <!--Sending yourself a DM Instagram-->
+            function openSendDMInstagramForm() {
+            document.getElementById("sendDMInstagram").style.display = "block";
+            }
+            function closeSendDMInstagramForm() {
+            document.getElementById("sendDMInstagram").style.display = "none";
+            }
+
+            <!--Login Twitter-->
+            function openLoginTwitterForm() {
+            document.getElementById("loginTwitter").style.display = "block";
+            }
+            function closeLoginTwitterForm() {
+            document.getElementById("loginTwitter").style.display = "none";
+            }
+
+            <!--Logout Twitter-->
+            function openLogoutTwitterForm() {
+            document.getElementById("logoutTwitter").style.display = "block";
+            }
+            function closeLogoutTwitterForm() {
+            document.getElementById("logoutTwitter").style.display = "none";
+            }
+
+            <!--Like post Twitter-->
+            function openLikePostTwitterForm() {
+            document.getElementById("likePostTwitter").style.display = "block";
+            }
+            function closeLikePostTwitterForm() {
+            document.getElementById("likePostTwitter").style.display = "none";
+            }
+
+            <!--Sending yourself a DM Twitter-->
+            function openSendDMTwitterForm() {
+            document.getElementById("sendDMTwitter").style.display = "block";
+            }
+            function closeSendDMTwitterForm() {
+            document.getElementById("sendDMTwitter").style.display = "none";
+            }
+            <!--
+            boolean result;
+            var message;
+
+            function choose(choice){
+              result = choice;
+            }
+            function message(choice){
+              message = choice;
+            }
+            -->
         </component>
       </div>
     </body>
@@ -267,6 +464,7 @@ $('.filter_link').click(function(e){
  -->
 
  <style scoped>
+   
     th
     {
         font-family: 'Times New Roman', Times, serif;
@@ -278,23 +476,23 @@ $('.filter_link').click(function(e){
       font-family: 'Courier New', Courier, monospace;
   }
 
-.card {
+.media-instagram{
   background-color: green;
-  box-shadow: 0 4px 8px 0 rgba(255, 160, 105, 0.32);
   transition: 0.3s;
-  width: 40%;
+  width: 25%;
+  height: 100%;
+  display:inline-block;
+  margin:5vh;
+  padding: 2vh;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 white;
 }
 
-.container {
-  padding: 2vh 2vh;
-}
 .shift {
-    left: 30vh;
-    right: 40vh;
+    left: 15vh;
+    right: 60vh;
 }
 .row:after {
   content: "";
@@ -319,8 +517,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   border: none;
   cursor: pointer;
   opacity: 0.8;
-  position: fixed;
-  width: 280px;
+
+  width: 90%;
 }
 
 /* The popup form - hidden by default */
@@ -331,11 +529,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
   right: 15px;
   border: 3px solid #f1f1f1;
   z-index: 9;
+  overflow: scroll;
+  background-color: white;
 }
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
+  width: 70vh;
+  height: 100vh;
   padding: 10px;
   background-color: white;
 }
@@ -360,26 +561,30 @@ body {font-family: Arial, Helvetica, sans-serif;}
   background-color: #04AA6D;
   color: white;
   padding: 16px 20px;
-  border: none;
+  border: 2px solid white;
   cursor: pointer;
-  width: 100%;
+  width: 45%;
   margin-bottom:10px;
   opacity: 0.8;
+  font-weight: bold;
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: red;
 }
+.form-container .submit {
+  background-color: #04AA6D;
+}
+
+.form-container .link {
+  background-color: gold;
+  color: #202125;
+}
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 * {
   box-sizing: border-box;

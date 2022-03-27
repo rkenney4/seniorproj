@@ -1,3 +1,4 @@
+
 <template>
   <head>
   </head>
@@ -30,7 +31,8 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
-
+import {roles, userSignedIn, userActive, userManagement, projectManagement, message} from "../App.vue"
+//roles = 0;
 export default {
   name: "Home",
   components: {
@@ -48,9 +50,11 @@ export default {
   font-family: 'Courier New', Courier, monospace;
   box-shadow: 5px 5px 5px ;
   }
+
   p {
     color: #202125;
   }
+
   #nav {
     position: fixed;
     left: 40vh;
@@ -58,7 +62,9 @@ export default {
     background: whitesmoke;
     height: 100vh;
   }
+
   .line {
     border-bottom:3px solid goldenrod;;
   }
+
 </style>
