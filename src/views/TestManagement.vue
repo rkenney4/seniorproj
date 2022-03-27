@@ -70,19 +70,31 @@
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Logout</h2>
 
-                    <label for="email"><b>Test ID: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Passed: </b></label>
-                    <br>
-                    <br>
-                    <label for="email"><b>Date: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Time: </b></label>
-                    <br>
-                    <br>
-                    <button type="button" class="btn cancel" onclick="closeLogoutInstagramForm()">Close</button>
+                    <p>1.	Go to website: </p>
+                <form action="https://www.instagram.com/" target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2. Click on your display profile in the upper right hand corner.</p>
+                <p>3.	Click the ‘Log out’ button</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
+                <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeLikePostInstagramForm()">Close</button>
+                </div>
                 </form>
                 </div>
                 </div>
@@ -95,19 +107,32 @@
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Liking a Post</h2>
 
-                    <label for="email"><b>Test ID: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Passed: </b></label>
-                    <br>
-                    <br>
-                    <label for="email"><b>Date: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Time: </b></label>
-                    <br>
-                    <br>
-                    <button type="button" class="btn cancel" onclick="closeLikePostInstagramForm()">Close</button>
+                    <p>1.	Go to website: </p>
+                <form action="https://www.instagram.com/" target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2. Go to a photo or video that you want to like</p>
+                <p>3.	Double click on the photo or video</p>
+                <p>4.	After performing step 2, a heart will display on the photo or video that you double clicked on</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
+                <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeLikePostInstagramForm()">Close</button>
+                </div>
                 </form>
                 </div>
                 </div>
@@ -120,19 +145,36 @@
                 <form action="/action_page.php" class="form-container">
                     <h2>Instagram: Sending Yourself a DM</h2>
 
-                    <label for="email"><b>Test ID: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Passed: </b></label>
-                    <br>
-                    <br>
-                    <label for="email"><b>Date: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Time: </b></label>
-                    <br>
-                    <br>
-                    <button type="button" class="btn cancel" onclick="closeSendDMInstagramForm()">Close</button>
+                    <p>1.	Go to website: </p>
+                <form action="https://www.instagram.com/" target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2.	Click on the message bubble in the upper right hand corner</p>
+                <p>3.	Click on the paper and pencil icon next to your username</p>
+                <p>4.	Type “smdsouza123” in the ‘To’ field</p>
+                <p>5.	Click the circle next to “smdsouza123”</p>
+                <p>6.	Click the ‘next’ button in the top right corner</p>
+                <p>7.	Type your message in the ‘Message’ field</p>
+                <p>8.	Click the send button on the right of the ‘Message’ field</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
+                <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeLikePostInstagramForm()">Close</button>
+                </div>
                 </form>
                 </div>
                 </div>
