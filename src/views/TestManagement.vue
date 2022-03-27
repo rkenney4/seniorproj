@@ -8,7 +8,7 @@
       <ul id="myUL">
         <a href="#" class="filter_link" data-filter="All">All</a> 
         <a href="#" class="filter_link" data-filter="Instagram">Instagram</a> 
-        <a href="#" class="filter_link" data-filter="Facebook">Facebook</a>
+        <a href="#" class="filter_link" data-filter="Twitter">Twitter</a>
       </ul>
 -->
       <!--This is the code for the search bar -->
@@ -93,7 +93,7 @@
                 <br>
                 <div>
                   <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
-                  <button type="button" class="btn cancel" onclick="closeLikePostInstagramForm()">Close</button>
+                  <button type="button" class="btn cancel" onclick="closeLogoutInstagramForm()">Close</button>
                 </div>
                 </form>
                 </div>
@@ -173,59 +173,88 @@
                 <br>
                 <div>
                   <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
-                  <button type="button" class="btn cancel" onclick="closeLikePostInstagramForm()">Close</button>
+                  <button type="button" class="btn cancel" onclick="closeSendDMInstagramForm()">Close</button>
                 </div>
                 </form>
                 </div>
                 </div>
             </div>
         </div>
-         <div class="media-instagram shift"> <!--Facebook div-->
+         <div class="media-instagram shift"> <!--Twitter div-->
         
-            <h2> Facebook: </h2>
+            <h2> Twitter: </h2>
             <div class="container" >
-            <button class="open-button" onclick="openLoginFacebookForm()"><b>Login</b></button>
-            <div class="form-popup" id="loginFacebook">
+            <button class="open-button" onclick="openLoginTwitterForm()"><b>Login</b></button>
+            <div class="form-popup" id="loginTwitter">
             <form action="/action_page.php" class="form-container">
-                <h2>Facebook: Login</h2>
+                <h2>Twitter: Login</h2>
 
-                <label for="email"><b>Test ID: </b></label>
+                <label for="email"><b>Steps:</b></label>
+                <p>1.	Go to website: </p>
+                <form action="https://www.instagram.com/" target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2.	Click on the ‘Sign in’ button below the text that says “Already Have An Account”</p>
+                <p>3.	Type your email in the text field that says ‘Phone, email, or username’ (smdsouza@oakland.edu)</p>
+                <p>4.	Click on the ‘Next’ button below the text field</p>
+                <p>5.	Enter your password in the ‘Password’ text field (CSI4999Capstone)</p>
+                <p>6.	Click on the ‘Log in’ button</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
                 <br>
                 <br>
-                <label for="psw"><b>Passed: </b></label>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
                 <br>
                 <br>
-                <label for="email"><b>Date: </b></label>
-                <br>
-                <br>
-                <label for="psw"><b>Time: </b></label>
-                <br>
-                <br>
-                <button type="button" class="btn cancel" onclick="closeLoginFacebookForm()">Close</button>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginTwitterForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeLoginTwitterForm()">Close</button>
+                </div>
             </form>
             </div>
             </div>
             <br><br>
             <div>
                 <div class="container" >
-                <button class="open-button" onclick="openLogoutFacebookForm()"><b>Logout</b></button>
-                <div class="form-popup" id="logoutFacebook">
+                <button class="open-button" onclick="openLogoutTwitterForm()"><b>Logout</b></button>
+                <div class="form-popup" id="logoutTwitter">
                 <form action="/action_page.php" class="form-container">
-                    <h2>Facebook: Logout</h2>
+                    <h2>Twitter: Logout</h2>
 
-                    <label for="email"><b>Test ID: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Passed: </b></label>
-                    <br>
-                    <br>
-                    <label for="email"><b>Date: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Time: </b></label>
-                    <br>
-                    <br>
-                    <button type="button" class="btn cancel" onclick="closeLogoutFacebookForm()">Close</button>
+                    <p>1.	Go to website: </p>
+                <form action="https://twitter.com/home " target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2.	Click on the ‘…’ next to your username at the bottom left of the screen</p>
+                <p>3.	Click on the ‘Log out’ button below the ‘Add an Existing account’ button</p>
+                <p>4.	Click on the ‘Log out’ button again to confirm that you would like to log out</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
+                <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginTwitterForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeLogoutTwitterForm()">Close</button>
+                </div>
                 </form>
                 </div>
                 </div>
@@ -233,24 +262,37 @@
             <br><br>
             <div>
                 <div class="container" >
-                <button class="open-button" onclick="openLikePostFacebookForm()"><b>Liking a post</b></button>
-                <div class="form-popup" id="likePostFacebook">
+                <button class="open-button" onclick="openLikePostTwitterForm()"><b>Liking a post</b></button>
+                <div class="form-popup" id="likePostTwitter">
                 <form action="/action_page.php" class="form-container">
-                    <h2>Facebook: Liking a Post</h2>
+                    <h2>Twitter: Liking a Post</h2>
 
-                    <label for="email"><b>Test ID: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Passed: </b></label>
-                    <br>
-                    <br>
-                    <label for="email"><b>Date: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Time: </b></label>
-                    <br>
-                    <br>
-                    <button type="button" class="btn cancel" onclick="closeLikePostFacebookForm()">Close</button>
+                    <p>1.	Go to website: </p>
+                <form action="https://twitter.com/home " target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2.	Go to a post that you want to like</p>
+                <p>3.	Below the post you will see a heart symbol</p>
+                <p>4.	Click on the heart symbol to like the post</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
+                <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginTwitterForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeLikePostTwitterForm()">Close</button>
+                </div>
                 </form>
                 </div>
                 </div>
@@ -258,24 +300,41 @@
             <br><br>
             <div>
                 <div class="container" >
-                <button class="open-button" onclick="openSendDMFacebookForm()"><b>Sending yourself a DM</b></button>
-                <div class="form-popup" id="sendDMFacebook">
+                <button class="open-button" onclick="openSendDMTwitterForm()"><b>Sending yourself a DM</b></button>
+                <div class="form-popup" id="sendDMTwitter">
                 <form action="/action_page.php" class="form-container">
-                    <h2>Facebook: Sending Yourself a DM</h2>
+                    <h2>Twitter: Sending Yourself a DM</h2>
 
-                    <label for="email"><b>Test ID: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Passed: </b></label>
-                    <br>
-                    <br>
-                    <label for="email"><b>Date: </b></label>
-                    <br>
-                    <br>
-                    <label for="psw"><b>Time: </b></label>
-                    <br>
-                    <br>
-                    <button type="button" class="btn cancel" onclick="closeSendDMFacebookForm()">Close</button>
+                    <p>1.	Go to website: </p>
+                <form action="https://twitter.com/home " target="_blank">
+                  <input type="submit" value="Website" class="btn link">
+                </form>
+                <p>2.	Click on the ‘Messages’ button on the left of the screen</p>
+                <p>3.	In the ‘search people’ text field, type your username (@d_saliel)</p>
+                <p>4.	Click on the row that has your username in the list</p>
+                <p>5.	Click on the ‘Next’ button on the upper right-hand corner of the screen</p>
+                <p>6.	Type your message in the ‘Start a new message’ text field below</p>
+                <p>7.	Click on the flying envelope button next to the smiley face emoji, or press the enter button on your keyboard</p>
+                <p>8.	You will see the message that you sent to yourself under your Messages inbox</p>
+                <br>
+                <label for="psw"><b>Result: </b></label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="1" required>
+                <label for="html">Passed</label>
+                <br>
+                <input type="radio" id="twitterLoginResult" name="result" value="0">
+                <label for="html">Failed</label>
+                <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <div>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginTwitterForm()">Submit</button>
+                  <button type="button" class="btn cancel" onclick="closeSendDMTwitterForm()">Close</button>
+                </div>
                 </form>
                 </div>
                 </div>
@@ -323,36 +382,36 @@
             document.getElementById("sendDMInstagram").style.display = "none";
             }
 
-            <!--Login Facebook-->
-            function openLoginFacebookForm() {
-            document.getElementById("loginFacebook").style.display = "block";
+            <!--Login Twitter-->
+            function openLoginTwitterForm() {
+            document.getElementById("loginTwitter").style.display = "block";
             }
-            function closeLoginFacebookForm() {
-            document.getElementById("loginFacebook").style.display = "none";
-            }
-
-            <!--Logout Facebook-->
-            function openLogoutFacebookForm() {
-            document.getElementById("logoutFacebook").style.display = "block";
-            }
-            function closeLogoutFacebookForm() {
-            document.getElementById("logoutFacebook").style.display = "none";
+            function closeLoginTwitterForm() {
+            document.getElementById("loginTwitter").style.display = "none";
             }
 
-            <!--Like post Facebook-->
-            function openLikePostFacebookForm() {
-            document.getElementById("likePostFacebook").style.display = "block";
+            <!--Logout Twitter-->
+            function openLogoutTwitterForm() {
+            document.getElementById("logoutTwitter").style.display = "block";
             }
-            function closeLikePostFacebookForm() {
-            document.getElementById("likePostFacebook").style.display = "none";
+            function closeLogoutTwitterForm() {
+            document.getElementById("logoutTwitter").style.display = "none";
             }
 
-            <!--Sending yourself a DM Facebook-->
-            function openSendDMFacebookForm() {
-            document.getElementById("sendDMFacebook").style.display = "block";
+            <!--Like post Twitter-->
+            function openLikePostTwitterForm() {
+            document.getElementById("likePostTwitter").style.display = "block";
             }
-            function closeSendDMFacebookForm() {
-            document.getElementById("sendDMFacebook").style.display = "none";
+            function closeLikePostTwitterForm() {
+            document.getElementById("likePostTwitter").style.display = "none";
+            }
+
+            <!--Sending yourself a DM Twitter-->
+            function openSendDMTwitterForm() {
+            document.getElementById("sendDMTwitter").style.display = "block";
+            }
+            function closeSendDMTwitterForm() {
+            document.getElementById("sendDMTwitter").style.display = "none";
             }
             <!--
             boolean result;
@@ -420,11 +479,11 @@ $('.filter_link').click(function(e){
 .media-instagram{
   background-color: green;
   transition: 0.3s;
-  width: 50vh;
-  height: 50vh;
+  width: 25%;
+  height: 100%;
   display:inline-block;
   margin:5vh;
-  
+  padding: 2vh;
 }
 
 .card:hover {
@@ -459,7 +518,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
   opacity: 0.8;
 
-  width: 280px;
+  width: 90%;
 }
 
 /* The popup form - hidden by default */
@@ -470,6 +529,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   right: 15px;
   border: 3px solid #f1f1f1;
   z-index: 9;
+  overflow: scroll;
+  background-color: white;
 }
 
 /* Add styles to the form container */
