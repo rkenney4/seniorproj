@@ -252,7 +252,7 @@
 }
 .shift {
     left: 50vh;
-    right: 40vh;
+    right: 30vh;
 }
 .row:after {
   content: "";
@@ -277,10 +277,6 @@
 
 .container {
   padding: 2vh 2vh;
-}
-.shift {
-    left: 50vh;
-    right: 40vh;
 }
 .row:after {
   content: "";
