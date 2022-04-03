@@ -4,6 +4,9 @@ import App from "./App.vue";
 import router from "./router";
 import * as firebase from "firebase/app";
 
+import { firestorePlugin } from 'vuefire'
+Vue.use(firestorePlugin);
+
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 var firebaseConfig = {
   apiKey: "AIzaSyAsHD4xIHmnXgxx3uZiVhiRimh2jOX8eds",
