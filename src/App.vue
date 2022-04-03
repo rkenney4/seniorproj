@@ -59,8 +59,46 @@ const router = useRouter();
 const isLoggedIn = ref(false);
 
 export default {
+  name: 'app',
+  data(){
+    return {
+      name: '',
+      testData: []
+    }
 
-}
+    
+  },
+  firestore: {
+    testData: db.collection('Instagram Login')
+  },
+
+  methods: {
+
+    createTest(date, fail, pass, time){
+      this.$firestoreRefs.cities.add({
+        date: date,
+        fail: fail,
+        pass: pass,
+        time: time
+      });
+
+    },
+
+    updateTest(test){
+      const test = {date: date, fail: fail, pass: pass, time: time};
+      this.$firestoreRefs.test.update({ date: test.date }).then(() => {
+        console.log("Test updated!");
+      });
+    },
+
+    deleteTest(date){
+      const test = {date: date, fail: fail, pass: pass, time: time};
+      this.$firestoreRefs.test.doc(test.date).delete();
+    },
+
+  },
+
+};
 
 let auth;
 onMounted(() => {
