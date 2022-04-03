@@ -52,11 +52,15 @@ import { onMounted, ref } from "vue";
 import { getAuth, onAuthStateChanged, signOut} from "firebase/auth";
 
 import { useRouter } from 'vue-router';
-import firebase from "./firebaseInit";
+import firebase from "./main";
 
 const db = firebase.firestore();
 const router = useRouter();
 const isLoggedIn = ref(false);
+
+export default {
+
+}
 
 let auth;
 onMounted(() => {
