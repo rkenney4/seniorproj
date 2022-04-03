@@ -74,31 +74,28 @@ export default {
 
   methods: {
 
-    createTest(date, fail, pass, time){
+    createTest(date){
       this.$firestoreRefs.cities.add({
-        date: date,
-        fail: fail,
-        pass: pass,
-        time: time
+        date: new Date().toISOString().slice(0, 10),
       });
 
     },
 
     updateTest(test){
-      const test = {date: date, fail: fail, pass: pass, time: time};
+      const test = {date: date};
       this.$firestoreRefs.test.update({ date: test.date }).then(() => {
         console.log("Test updated!");
       });
     },
 
     deleteTest(date){
-      const test = {date: date, fail: fail, pass: pass, time: time};
+      const test = {date: date};
       this.$firestoreRefs.test.doc(test.date).delete();
     },
 
   },
 
-};
+},
 
 let auth;
 onMounted(() => {
