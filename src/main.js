@@ -30,9 +30,15 @@ const colRef = collection(db, 'Instagram Login')
 
 getDocs(colRef)
   .then((snapshot) =>{
-    console.log(snapshot.docs)
+    let tests = []
+    snapshot.docs.forEach((doc) =>{
+      tests.push({...doc.data(), id: doc.id})
+    })
+    console.log(tests)
   })
-
+.catch(err =>{
+  console.log(err.message)
+})
 app.use(router);
 
 app.mount("#app");
