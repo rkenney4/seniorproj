@@ -5,9 +5,7 @@ import router from "./router";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
-
-import { firestorePlugin } from 'vuefire'
-Vue.use(firestorePlugin);
+import { getFirestore, collection, getDocs } from 'firebase/firestore'
 
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 var firebaseConfig = {
@@ -24,7 +22,16 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+const db = getFirestore()
+
 const app = createApp(App);
+
+const colRef = collection(db, 'Instagram Login')
+
+getDocs(colRef)
+  .then((snapshot) =>{
+    console.log(snapshot.docs)
+  })
 
 app.use(router);
 
