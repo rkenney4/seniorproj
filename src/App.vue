@@ -90,8 +90,8 @@ body
 #nav {
   padding: 5vh;
   position: fixed;
+  width: 25vh;
   height: 90vh;
-  background-color: #202125;
   z-index: 2;
 }
 #nav a {

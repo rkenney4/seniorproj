@@ -284,8 +284,8 @@
   clear: both;
 }
 .column {
-  float: left;
-  width: 25%;
+  left: 240px;
+  width: 50%;
   padding: 0 10px;
 }
 .flip-card {

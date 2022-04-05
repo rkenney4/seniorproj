@@ -151,7 +151,7 @@
   padding: 2vh 2vh;
 }
 .shift {
-    left: 50vh;
+    left: 30vh;
     right: 40vh;
 }
 .row:after {
@@ -161,7 +161,7 @@
 }
 .column {
   float: left;
-  width: 25%;
+  width: 50%;
   padding: 1vh 1vh;
 }
 .flip-card {
