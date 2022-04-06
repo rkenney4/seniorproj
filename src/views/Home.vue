@@ -61,6 +61,7 @@ export default {
     right: 30vh;
     background: whitesmoke;
     height: 100vh;
+    width: 100vh;
   }
 
   .line {

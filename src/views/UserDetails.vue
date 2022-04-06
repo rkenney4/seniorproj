@@ -37,6 +37,7 @@
     right: 30vh;
     background-color: whitesmoke;
     height: 100vh;
+    width: 100vh;
     color: #202125;
   }
 </style>
