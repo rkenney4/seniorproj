@@ -11,16 +11,7 @@
         <a href="#" class="filter_link" data-filter="Twitter">Twitter</a>
       </ul>
 -->
-      <!--This is the code for the search bar -->
-      <div class="search">
-        <form action="#">
-          <input type="text"
-            placeholder="Search Project ..."
-            name="search"
-          >
-            <button type="submit" style="margin:10px">Search</button>
-        </form>
-      </div>
+      
       <!-- This is the card element for Instagram (First card in the row of cards) -->
       <div class="row">
         <div class="media-instagram shift"> <!--Instagram div-->
@@ -43,15 +34,20 @@
                 <br>
                 <label for="psw"><b>Result: </b></label>
                 <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
+                <input type="radio" id="instagramLoginDiv" name="result" value="true" onClick="chooseLoginInstagram('Passed')" required>
                 <label for="html">Passed</label>
                 <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="0">
+                <input type="radio" id="instagramLoginDiv" name="result" value="false" onClick="chooseLoginInstagram('Failed')">
                 <label for="html">Failed</label>
                 <br>
                 <br>
                 <label for="email"><b>Comments: </b></label>
-                <textarea id="comment" name="comment" rows="4" cols="50">
+                <textarea name="comment" rows="4" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <label for="email"><b>Test History: </b></label>
+                <textarea id="loginInstagramResult" name="comment" rows="10" cols="50">
                 </textarea>
                 <br>
                 <br>
@@ -79,10 +75,10 @@
                 <br>
                 <label for="psw"><b>Result: </b></label>
                 <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
+                <input type="radio" id="instagramLoginResult" name="result" value="true" required>
                 <label for="html">Passed</label>
                 <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="0">
+                <input type="radio" id="instagramLoginResult" name="result" value="false">
                 <label for="html">Failed</label>
                 <br>
                 <br>
@@ -354,8 +350,20 @@
               document.getElementById("loginInstagram").reset();
             }
             function submitLoginInstagramForm() {
-              document.getElementById("loginInstagram").submit();
-              document.getElementById("loginInstagram").reset();
+              var x = document.getElementById("loginInstagram").value;
+              if (loginInstagramResult == 'Passed') {
+                loginInstagramString = loginInstagramString + "Passed" + "\n";
+              }
+              else if (loginInstagramResult == 'Failed') {
+                loginInstagramString = loginInstagramString + "Failed" + "\n";
+              }
+              localStorage.setItem("loginInstagramString", loginInstagramString);
+              document.getElementById("loginInstagramResult").innerHTML = loginInstagramString;
+            }
+            var loginInstagramResult = localStorage.loginInstagramResult;
+            var loginInstagramString = "";
+            function chooseLoginInstagram(choice){
+              loginInstagramResult = choice;
             }
 
             <!--Logout Instagram-->
