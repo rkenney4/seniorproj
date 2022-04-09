@@ -34,12 +34,13 @@
                 <br>
                 <label for="psw"><b>Result: </b></label>
                 <br>
-                <input type="radio" id="instagramLoginDiv" name="result" value="true" onClick="chooseLoginInstagram('Passed')" required>
+
+                <fieldset id="instagramLoginDiv">
+                <input type="radio" id="instagramLoginDiv1" name="result" value="passed" onClick="chooseLoginInstagram('Passed')" required>
                 <label for="html">Passed</label>
-                <br>
-                <input type="radio" id="instagramLoginDiv" name="result" value="false" onClick="chooseLoginInstagram('Failed')">
+                <input type="radio" id="instagramLoginDiv2" name="result" value="failed" onClick="chooseLoginInstagram('Failed')">
                 <label for="html">Failed</label>
-                <br>
+                  </fieldset>
                 <br>
                 <label for="email"><b>Comments: </b></label>
                 <textarea name="comment" rows="4" cols="50">
@@ -350,20 +351,14 @@
               document.getElementById("loginInstagram").reset();
             }
             function submitLoginInstagramForm() {
-              var x = document.getElementById("loginInstagram").value;
-              if (loginInstagramResult == 'Passed') {
-                loginInstagramString = loginInstagramString + "Passed" + "\n";
+              if (instagramLoginDiv == 'Passed') {
+                var x = document.getElementById("instagramLoginDiv1").value;
+            document.getElementById("loginInstagramResult").innerHTML = x;
               }
-              else if (loginInstagramResult == 'Failed') {
-                loginInstagramString = loginInstagramString + "Failed" + "\n";
+              else if (instagramLoginDiv == 'Failed') {
+                var x = document.getElementById("instagramLoginDiv2").value;
+            document.getElementById("loginInstagramResult").innerHTML = x;
               }
-              localStorage.setItem("loginInstagramString", loginInstagramString);
-              document.getElementById("loginInstagramResult").innerHTML = loginInstagramString;
-            }
-            var loginInstagramResult = localStorage.loginInstagramResult;
-            var loginInstagramString = "";
-            function chooseLoginInstagram(choice){
-              loginInstagramResult = choice;
             }
 
             <!--Logout Instagram-->
