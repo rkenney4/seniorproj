@@ -350,12 +350,15 @@
               document.getElementById("loginInstagram").reset();
             }
             function submitLoginInstagramForm() {
-              var x = document.getElementById("loginInstagram").value;
-              if (loginInstagramResult != 'Failed') {
+              switch (document.getElementById("loginInstagram").value){
+              
+              case 'Passed':
                 loginInstagramString = loginInstagramString + "Passed" + "\n";
-              }
-              else if (loginInstagramResult != 'Failed') {
+              break;
+
+              case 'Failed':
                 loginInstagramString = loginInstagramString + "Failed" + "\n";
+              break;
               }
               localStorage.setItem("loginInstagramString", loginInstagramString);
               document.getElementById("loginInstagramResult").innerHTML = loginInstagramString;
