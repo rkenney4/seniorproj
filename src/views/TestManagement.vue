@@ -351,10 +351,10 @@
             }
             function submitLoginInstagramForm() {
               var x = document.getElementById("loginInstagram").value;
-              if (loginInstagramResult == 'Passed') {
+              if (loginInstagramResult != 'Failed') {
                 loginInstagramString = loginInstagramString + "Passed" + "\n";
               }
-              else if (loginInstagramResult == 'Failed') {
+              else if (loginInstagramResult != 'Failed') {
                 loginInstagramString = loginInstagramString + "Failed" + "\n";
               }
               localStorage.setItem("loginInstagramString", loginInstagramString);
