@@ -141,20 +141,19 @@
 
                 <label for="psw"><b>Result: </b></label>
                 <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
-                <label for="html">Passed</label>
-                <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="0">
-                <label for="html">Failed</label>
+                <input type="text" value="" id="likePostInstagramTextField" name="result">
                 <br>
                 <br>
                 <label for="email"><b>Comments: </b></label>
-                <textarea id="comment" name="comment" rows="4" cols="50">
+                <input type="text" value="" id="likePostInstagramComment" name="comment" rows="4" cols="50">
+                <br>
+                <br>
+                <label for="email"><b>Test History: </b></label>
+                <textarea id="likePostInstagramResult" name="comment" rows="10" cols="50">
                 </textarea>
                 <br>
-                <br>
                 <div>
-                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLikePostInstagramForm()">Submit</button>
                   <button type="button" class="btn cancel" onclick="closeLikePostInstagramForm()">Close</button>
                 </div>
                 </form>
@@ -443,6 +442,23 @@
             function closeLikePostInstagramForm() {
             document.getElementById("likePostInstagram").style.display = "none";
             }
+
+            function submitLikePostInstagramForm() {
+              var likePostInstagramResult = document.getElementById("likePostInstagramTextField").value;
+              var likePostInstagramComment = document.getElementById("likePostInstagramComment").value;
+              const d = new Date();
+              if (likePostInstagramResult == 'Passed' || likePostInstagramResult == 'Failed') {
+                likePostInstagramHistory = "Date: " + d + "\n" + "Result: " + likePostInstagramResult + "\n" + "Comment: " + likePostInstagramComment + "\n"  + "--------------------" + "\n" + likePostInstagramHistory;
+                document.getElementById("likePostInstagramResult").innerHTML = likePostInstagramHistory;
+                window.localStorage.setItem('likePostInstagramHistory', likePostInstagramHistory);
+              }
+              else if (likePostInstagramResult == 'Clear') {
+                window.localStorage.removeItem('likePostInstagramHistory');
+              }
+            }
+            
+            var likePostInstagramHistory = window.localStorage.getItem('likePostInstagramHistory');
+
 
             <!--Sending yourself a DM Instagram-->
             function openSendDMInstagramForm() {
