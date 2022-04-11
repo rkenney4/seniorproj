@@ -51,7 +51,7 @@
                 <br>
                 <br>
                 -->
-                <input type="text" value="" id="textField" name="result">
+                <input type="text" value="" id="loginInstagramTextField" name="result">
                 <br>
                 <br>
                 <label for="email"><b>Comments: </b></label>
@@ -361,7 +361,7 @@
               document.getElementById("loginInstagram").reset();
             }
             function submitLoginInstagramForm() {
-              var loginInstagramResult = document.getElementById("textField").value;
+              var loginInstagramResult = document.getElementById("loginInstagramTextField").value;
               var loginInstagramComment = document.getElementById("loginInstagramComment").value;
               const d = new Date();
               if (loginInstagramResult == 'Passed' || loginInstagramResult == 'Failed') {
@@ -376,11 +376,13 @@
             }
             <!--var loginInstagramHistory = localStorage.loginInstagramHistory;-->
             var loginInstagramHistory = window.localStorage.getItem('loginInstagramHistory');
+            <!--
+              Unused function
             function chooseLoginInstagram(choice){
               loginInstagramResult = choice;
               return loginInstagramResult
             }
-            <!--Comment variable-->
+            -->
             
 
 
