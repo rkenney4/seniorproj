@@ -190,20 +190,19 @@
                 <br>
                 <label for="psw"><b>Result: </b></label>
                 <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
-                <label for="html">Passed</label>
-                <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="0">
-                <label for="html">Failed</label>
+                <input type="text" value="" id="sendDMInstagramTextField" name="result">
                 <br>
                 <br>
                 <label for="email"><b>Comments: </b></label>
-                <textarea id="comment" name="comment" rows="4" cols="50">
+                <input type="text" value="" id="sendDMInstagramComment" name="comment" rows="4" cols="50">
+                <br>
+                <br>
+                <label for="email"><b>Test History: </b></label>
+                <textarea id="sendDMInstagramResult" name="comment" rows="10" cols="50">
                 </textarea>
                 <br>
-                <br>
                 <div>
-                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitSendDMInstagramForm()">Submit</button>
                   <button type="button" class="btn cancel" onclick="closeSendDMInstagramForm()">Close</button>
                 </div>
                 </form>
@@ -467,6 +466,22 @@
             function closeSendDMInstagramForm() {
             document.getElementById("sendDMInstagram").style.display = "none";
             }
+
+            function submitSendDMInstagramForm() {
+              var sendDMInstagramResult = document.getElementById("sendDMInstagramTextField").value;
+              var sendDMInstagramComment = document.getElementById("sendDMInstagramComment").value;
+              const d = new Date();
+              if (sendDMInstagramResult == 'Passed' || sendDMInstagramResult == 'Failed') {
+                sendDMInstagramHistory = "Date: " + d + "\n" + "Result: " + sendDMInstagramResult + "\n" + "Comment: " + sendDMInstagramComment + "\n"  + "--------------------" + "\n" + sendDMInstagramHistory;
+                document.getElementById("sendDMInstagramResult").innerHTML = sendDMInstagramHistory;
+                window.localStorage.setItem('sendDMInstagramHistory', sendDMInstagramHistory);
+              }
+              else if (sendDMInstagramResult == 'Clear') {
+                window.localStorage.removeItem('sendDMInstagramHistory');
+              }
+            }
+            
+            var sendDMInstagramHistory = window.localStorage.getItem('sendDMInstagramHistory');
 
             <!--Login Twitter-->
             function openLoginTwitterForm() {
