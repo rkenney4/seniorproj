@@ -84,6 +84,15 @@
                 <p>2. Click on your display profile in the upper right hand corner.</p>
                 <p>3.	Click the ‘Log out’ button</p>
                 <br>
+                <p>---------------------------</p>
+                <h4>Legend:</h4>
+                <p>"Passed" = Successful output</p>
+                <p>"Failed" = Failed output</p>
+                <p>"Clear" = Refresh history</p>
+                <p>Other inputs are ignored</p>
+                <p>---------------------------</p>
+                <br>
+
                 <label for="psw"><b>Result: </b></label>
 
                 <input type="text" value="" id="logoutInstagramTextField" name="result">
@@ -121,6 +130,15 @@
                 <p>3.	Double click on the photo or video</p>
                 <p>4.	After performing step 2, a heart will display on the photo or video that you double clicked on</p>
                 <br>
+                <p>---------------------------</p>
+                <h4>Legend:</h4>
+                <p>"Passed" = Successful output</p>
+                <p>"Failed" = Failed output</p>
+                <p>"Clear" = Refresh history</p>
+                <p>Other inputs are ignored</p>
+                <p>---------------------------</p>
+                <br>
+
                 <label for="psw"><b>Result: </b></label>
                 <br>
                 <input type="radio" id="instagramLoginResult" name="result" value="1" required>
@@ -162,6 +180,14 @@
                 <p>6.	Click the ‘next’ button in the top right corner</p>
                 <p>7.	Type your message in the ‘Message’ field</p>
                 <p>8.	Click the send button on the right of the ‘Message’ field</p>
+                <br>
+                <p>---------------------------</p>
+                <h4>Legend:</h4>
+                <p>"Passed" = Successful output</p>
+                <p>"Failed" = Failed output</p>
+                <p>"Clear" = Refresh history</p>
+                <p>Other inputs are ignored</p>
+                <p>---------------------------</p>
                 <br>
                 <label for="psw"><b>Result: </b></label>
                 <br>
