@@ -354,12 +354,18 @@
               
               case 'Passed':
                 loginInstagramString = loginInstagramString + "Passed" + "\n";
+                return;
               break;
 
               case 'Failed':
                 loginInstagramString = loginInstagramString + "Failed" + "\n";
+                return;
               break;
+
+              default: 
+                return;
               }
+              
               localStorage.setItem("loginInstagramString", loginInstagramString);
               document.getElementById("loginInstagramResult").innerHTML = loginInstagramString;
             }
