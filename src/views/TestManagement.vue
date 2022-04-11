@@ -85,21 +85,20 @@
                 <p>3.	Click the ‘Log out’ button</p>
                 <br>
                 <label for="psw"><b>Result: </b></label>
-                <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="true" required>
-                <br>
-                <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="false">
-                <label for="html">Failed</label>
+
+                <input type="text" value="" id="logoutInstagramTextField" name="result">
                 <br>
                 <br>
                 <label for="email"><b>Comments: </b></label>
-                <textarea id="comment" name="comment" rows="4" cols="50">
+                <input type="text" value="" id="logoutInstagramComment" name="comment" rows="4" cols="50">
+                <br>
+                <br>
+                <label for="email"><b>Test History: </b></label>
+                <textarea id="logoutInstagramResult" name="comment" rows="10" cols="50">
                 </textarea>
                 <br>
-                <br>
                 <div>
-                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLogoutInstagramForm()">Submit</button>
                   <button type="button" class="btn cancel" onclick="closeLogoutInstagramForm()">Close</button>
                 </div>
                 </form>
@@ -392,7 +391,24 @@
             }
             function closeLogoutInstagramForm() {
             document.getElementById("logoutInstagram").style.display = "none";
+            document.getElementById("logoutInstagram").reset();
             }
+
+            function submitLogoutInstagramForm() {
+              var logoutInstagramResult = document.getElementById("logoutInstagramTextField").value;
+              var logoutInstagramComment = document.getElementById("logoutInstagramComment").value;
+              const d = new Date();
+              if (logoutInstagramResult == 'Passed' || logoutInstagramResult == 'Failed') {
+                logoutInstagramHistory = "Date: " + d + "\n" + "Result: " + logoutInstagramResult + "\n" + "Comment: " + logoutInstagramComment + "\n"  + "--------------------" + "\n" + logoutInstagramHistory;
+                document.getElementById("logoutInstagramResult").innerHTML = logoutInstagramHistory;
+                window.localStorage.setItem('logoutInstagramHistory', logoutInstagramHistory);
+              }
+              else if (logoutInstagramResult == 'Clear') {
+                window.localStorage.removeItem('logoutInstagramHistory');
+              }
+            }
+            
+            var logoutInstagramHistory = window.localStorage.getItem('logoutInstagramHistory');
 
             <!--Like post Instagram-->
             function openLikePostInstagramForm() {
