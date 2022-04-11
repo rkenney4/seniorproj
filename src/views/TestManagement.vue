@@ -32,8 +32,17 @@
                 <p>3.	Enter your password in the ‘Password’ field <b>CSI4999Capstone</b></p>
                 <p>4.	If you are logging in for the first time, after step 3, choose whether you would like to save your login information.</p>
                 <br>
+                <p>---------------------------</p>
+                <h4>Legend:</h4>
+                <p>"Passed" = Successful output</p>
+                <p>"Failed" = Failed output</p>
+                <p>"Clear" = Refresh history</p>
+                <p>Other inputs are ignored</p>
+                <p>---------------------------</p>
+                <br>
                 <label for="psw"><b>Result: </b></label>
                 <br>
+                <!--
                 <input type="radio" id="instagramLoginDiv" name="result" value="true" onClick="chooseLoginInstagram('Passed')" required>
                 <label for="html">Passed</label>
                 <br>
@@ -41,15 +50,17 @@
                 <label for="html">Failed</label>
                 <br>
                 <br>
+                -->
+                <input type="text" value="" id="textField" name="result">
+                <br>
+                <br>
                 <label for="email"><b>Comments: </b></label>
-                <textarea name="comment" rows="4" cols="50">
-                </textarea>
+                <input type="text" value="" id="loginInstagramComment" name="comment" rows="4" cols="50">
                 <br>
                 <br>
                 <label for="email"><b>Test History: </b></label>
                 <textarea id="loginInstagramResult" name="comment" rows="10" cols="50">
                 </textarea>
-                <br>
                 <br>
                 <div>
                   <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
@@ -76,7 +87,7 @@
                 <label for="psw"><b>Result: </b></label>
                 <br>
                 <input type="radio" id="instagramLoginResult" name="result" value="true" required>
-                <label for="html">Passed</label>
+                <br>
                 <br>
                 <input type="radio" id="instagramLoginResult" name="result" value="false">
                 <label for="html">Failed</label>
@@ -350,21 +361,28 @@
               document.getElementById("loginInstagram").reset();
             }
             function submitLoginInstagramForm() {
-              var x = document.getElementById("loginInstagram").value;
-              if (loginInstagramResult == 'Passed') {
-                loginInstagramString = loginInstagramString + "Passed" + "\n";
+              var loginInstagramResult = document.getElementById("textField").value;
+              var loginInstagramComment = document.getElementById("loginInstagramComment").value;
+              const d = new Date();
+              if (loginInstagramResult == 'Passed' || loginInstagramResult == 'Failed') {
+                loginInstagramHistory = "Date: " + d + "\n" + "Result: " + loginInstagramResult + "\n" + "Comment: " + loginInstagramComment + "\n"  + "--------------------" + "\n" + loginInstagramHistory;
+                document.getElementById("loginInstagramResult").innerHTML = loginInstagramHistory;
+                <!--localStorage.setItem("loginInstagramResult", loginInstagramHistory);-->
+                window.localStorage.setItem('loginInstagramHistory', loginInstagramHistory);
               }
-              else if (loginInstagramResult == 'Failed') {
-                loginInstagramString = loginInstagramString + "Failed" + "\n";
+              else if (loginInstagramResult == 'Clear') {
+                window.localStorage.removeItem('loginInstagramHistory');
               }
-              localStorage.setItem("loginInstagramString", loginInstagramString);
-              document.getElementById("loginInstagramResult").innerHTML = loginInstagramString;
             }
-            var loginInstagramResult = localStorage.loginInstagramResult;
-            var loginInstagramString = "";
+            <!--var loginInstagramHistory = localStorage.loginInstagramHistory;-->
+            var loginInstagramHistory = window.localStorage.getItem('loginInstagramHistory');
             function chooseLoginInstagram(choice){
               loginInstagramResult = choice;
+              return loginInstagramResult
             }
+            <!--Comment variable-->
+            
+
 
             <!--Logout Instagram-->
             function openLogoutInstagramForm() {
