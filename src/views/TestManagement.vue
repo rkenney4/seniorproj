@@ -11,16 +11,7 @@
         <a href="#" class="filter_link" data-filter="Twitter">Twitter</a>
       </ul>
 -->
-      <!--This is the code for the search bar -->
-      <div class="search">
-        <form action="#">
-          <input type="text"
-            placeholder="Search Project ..."
-            name="search"
-          >
-            <button type="submit" style="margin:10px">Search</button>
-        </form>
-      </div>
+      
       <!-- This is the card element for Instagram (First card in the row of cards) -->
       <div class="row">
         <div class="media-instagram shift"> <!--Instagram div-->
@@ -41,19 +32,35 @@
                 <p>3.	Enter your password in the ‘Password’ field <b>CSI4999Capstone</b></p>
                 <p>4.	If you are logging in for the first time, after step 3, choose whether you would like to save your login information.</p>
                 <br>
+                <p>---------------------------</p>
+                <h4>Legend:</h4>
+                <p>"Passed" = Successful output</p>
+                <p>"Failed" = Failed output</p>
+                <p>"Clear" = Refresh history</p>
+                <p>Other inputs are ignored</p>
+                <p>---------------------------</p>
+                <br>
                 <label for="psw"><b>Result: </b></label>
                 <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
+                <!--
+                <input type="radio" id="instagramLoginDiv" name="result" value="true" onClick="chooseLoginInstagram('Passed')" required>
                 <label for="html">Passed</label>
                 <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="0">
+                <input type="radio" id="instagramLoginDiv" name="result" value="false" onClick="chooseLoginInstagram('Failed')">
                 <label for="html">Failed</label>
                 <br>
                 <br>
-                <label for="email"><b>Comments: </b></label>
-                <textarea id="comment" name="comment" rows="4" cols="50">
-                </textarea>
+                -->
+                <input type="text" value="" id="loginInstagramTextField" name="result">
                 <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <input type="text" value="" id="loginInstagramComment" name="comment" rows="4" cols="50">
+                <br>
+                <br>
+                <label for="email"><b>Test History: </b></label>
+                <textarea id="loginInstagramResult" name="comment" rows="10" cols="50">
+                </textarea>
                 <br>
                 <div>
                   <button type="button" value="Submit" class="btn submit" onclick="submitLoginInstagramForm()">Submit</button>
@@ -79,10 +86,10 @@
                 <br>
                 <label for="psw"><b>Result: </b></label>
                 <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="1" required>
-                <label for="html">Passed</label>
+                <input type="radio" id="instagramLoginResult" name="result" value="true" required>
                 <br>
-                <input type="radio" id="instagramLoginResult" name="result" value="0">
+                <br>
+                <input type="radio" id="instagramLoginResult" name="result" value="false">
                 <label for="html">Failed</label>
                 <br>
                 <br>
@@ -354,9 +361,30 @@
               document.getElementById("loginInstagram").reset();
             }
             function submitLoginInstagramForm() {
-              document.getElementById("loginInstagram").submit();
-              document.getElementById("loginInstagram").reset();
+              var loginInstagramResult = document.getElementById("loginInstagramTextField").value;
+              var loginInstagramComment = document.getElementById("loginInstagramComment").value;
+              const d = new Date();
+              if (loginInstagramResult == 'Passed' || loginInstagramResult == 'Failed') {
+                loginInstagramHistory = "Date: " + d + "\n" + "Result: " + loginInstagramResult + "\n" + "Comment: " + loginInstagramComment + "\n"  + "--------------------" + "\n" + loginInstagramHistory;
+                document.getElementById("loginInstagramResult").innerHTML = loginInstagramHistory;
+                <!--localStorage.setItem("loginInstagramResult", loginInstagramHistory);-->
+                window.localStorage.setItem('loginInstagramHistory', loginInstagramHistory);
+              }
+              else if (loginInstagramResult == 'Clear') {
+                window.localStorage.removeItem('loginInstagramHistory');
+              }
             }
+            <!--var loginInstagramHistory = localStorage.loginInstagramHistory;-->
+            var loginInstagramHistory = window.localStorage.getItem('loginInstagramHistory');
+            <!--
+              Unused function
+            function chooseLoginInstagram(choice){
+              loginInstagramResult = choice;
+              return loginInstagramResult
+            }
+            -->
+            
+
 
             <!--Logout Instagram-->
             function openLogoutInstagramForm() {
