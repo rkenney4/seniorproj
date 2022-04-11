@@ -221,7 +221,7 @@
 
                 <label for="email"><b>Steps:</b></label>
                 <p>1.	Go to website: </p>
-                <form action="https://www.instagram.com/" target="_blank">
+                <form action="https://www.twitter.com/" target="_blank">
                   <input type="submit" value="Website" class="btn link">
                 </form>
                 <p>2.	Click on the ‘Sign in’ button below the text that says “Already Have An Account”</p>
@@ -230,19 +230,35 @@
                 <p>5.	Enter your password in the ‘Password’ text field (CSI4999Capstone)</p>
                 <p>6.	Click on the ‘Log in’ button</p>
                 <br>
+                <p>---------------------------</p>
+                <h4>Legend:</h4>
+                <p>"Passed" = Successful output</p>
+                <p>"Failed" = Failed output</p>
+                <p>"Clear" = Refresh history</p>
+                <p>Other inputs are ignored</p>
+                <p>---------------------------</p>
+                <br>
                 <label for="psw"><b>Result: </b></label>
                 <br>
-                <input type="radio" id="twitterLoginResult" name="result" value="1" required>
+                <!--
+                <input type="radio" id="instagramLoginDiv" name="result" value="true" onClick="chooseLoginInstagram('Passed')" required>
                 <label for="html">Passed</label>
                 <br>
-                <input type="radio" id="twitterLoginResult" name="result" value="0">
+                <input type="radio" id="instagramLoginDiv" name="result" value="false" onClick="chooseLoginInstagram('Failed')">
                 <label for="html">Failed</label>
                 <br>
                 <br>
-                <label for="email"><b>Comments: </b></label>
-                <textarea id="comment" name="comment" rows="4" cols="50">
-                </textarea>
+                -->
+                <input type="text" value="" id="loginTwitterTextField" name="result">
                 <br>
+                <br>
+                <label for="email"><b>Comments: </b></label>
+                <input type="text" value="" id="loginTwitterComment" name="comment" rows="4" cols="50">
+                <br>
+                <br>
+                <label for="email"><b>Test History: </b></label>
+                <textarea id="loginTwitterResult" name="comment" rows="10" cols="50">
+                </textarea>
                 <br>
                 <div>
                   <button type="button" value="Submit" class="btn submit" onclick="submitLoginTwitterForm()">Submit</button>
@@ -267,22 +283,38 @@
                 <p>3.	Click on the ‘Log out’ button below the ‘Add an Existing account’ button</p>
                 <p>4.	Click on the ‘Log out’ button again to confirm that you would like to log out</p>
                 <br>
+                <p>---------------------------</p>
+                <h4>Legend:</h4>
+                <p>"Passed" = Successful output</p>
+                <p>"Failed" = Failed output</p>
+                <p>"Clear" = Refresh history</p>
+                <p>Other inputs are ignored</p>
+                <p>---------------------------</p>
+                <br>
                 <label for="psw"><b>Result: </b></label>
                 <br>
-                <input type="radio" id="twitterLoginResult" name="result" value="1" required>
+                <!--
+                <input type="radio" id="instagramLoginDiv" name="result" value="true" onClick="chooseLoginInstagram('Passed')" required>
                 <label for="html">Passed</label>
                 <br>
-                <input type="radio" id="twitterLoginResult" name="result" value="0">
+                <input type="radio" id="instagramLoginDiv" name="result" value="false" onClick="chooseLoginInstagram('Failed')">
                 <label for="html">Failed</label>
                 <br>
                 <br>
+                -->
+                <input type="text" value="" id="logoutTwitterTextField" name="result">
+                <br>
+                <br>
                 <label for="email"><b>Comments: </b></label>
-                <textarea id="comment" name="comment" rows="4" cols="50">
+                <input type="text" value="" id="logoutTwitterComment" name="comment" rows="4" cols="50">
+                <br>
+                <br>
+                <label for="email"><b>Test History: </b></label>
+                <textarea id="logoutTwitterResult" name="comment" rows="10" cols="50">
                 </textarea>
                 <br>
-                <br>
                 <div>
-                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginTwitterForm()">Submit</button>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLogoutTwitterForm()">Submit</button>
                   <button type="button" class="btn cancel" onclick="closeLogoutTwitterForm()">Close</button>
                 </div>
                 </form>
@@ -305,22 +337,38 @@
                 <p>3.	Below the post you will see a heart symbol</p>
                 <p>4.	Click on the heart symbol to like the post</p>
                 <br>
+                <p>---------------------------</p>
+                <h4>Legend:</h4>
+                <p>"Passed" = Successful output</p>
+                <p>"Failed" = Failed output</p>
+                <p>"Clear" = Refresh history</p>
+                <p>Other inputs are ignored</p>
+                <p>---------------------------</p>
+                <br>
                 <label for="psw"><b>Result: </b></label>
                 <br>
-                <input type="radio" id="twitterLoginResult" name="result" value="1" required>
+                <!--
+                <input type="radio" id="instagramLoginDiv" name="result" value="true" onClick="chooseLoginInstagram('Passed')" required>
                 <label for="html">Passed</label>
                 <br>
-                <input type="radio" id="twitterLoginResult" name="result" value="0">
+                <input type="radio" id="instagramLoginDiv" name="result" value="false" onClick="chooseLoginInstagram('Failed')">
                 <label for="html">Failed</label>
                 <br>
                 <br>
+                -->
+                <input type="text" value="" id="likePostTwitterTextField" name="result">
+                <br>
+                <br>
                 <label for="email"><b>Comments: </b></label>
-                <textarea id="comment" name="comment" rows="4" cols="50">
+                <input type="text" value="" id="likePostTwitterComment" name="comment" rows="4" cols="50">
+                <br>
+                <br>
+                <label for="email"><b>Test History: </b></label>
+                <textarea id="likePostTwitterResult" name="comment" rows="10" cols="50">
                 </textarea>
                 <br>
-                <br>
                 <div>
-                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginTwitterForm()">Submit</button>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitLikePostTwitterForm()">Submit</button>
                   <button type="button" class="btn cancel" onclick="closeLikePostTwitterForm()">Close</button>
                 </div>
                 </form>
@@ -347,22 +395,38 @@
                 <p>7.	Click on the flying envelope button next to the smiley face emoji, or press the enter button on your keyboard</p>
                 <p>8.	You will see the message that you sent to yourself under your Messages inbox</p>
                 <br>
+                <p>---------------------------</p>
+                <h4>Legend:</h4>
+                <p>"Passed" = Successful output</p>
+                <p>"Failed" = Failed output</p>
+                <p>"Clear" = Refresh history</p>
+                <p>Other inputs are ignored</p>
+                <p>---------------------------</p>
+                <br>
                 <label for="psw"><b>Result: </b></label>
                 <br>
-                <input type="radio" id="twitterLoginResult" name="result" value="1" required>
+                <!--
+                <input type="radio" id="instagramLoginDiv" name="result" value="true" onClick="chooseLoginInstagram('Passed')" required>
                 <label for="html">Passed</label>
                 <br>
-                <input type="radio" id="twitterLoginResult" name="result" value="0">
+                <input type="radio" id="instagramLoginDiv" name="result" value="false" onClick="chooseLoginInstagram('Failed')">
                 <label for="html">Failed</label>
                 <br>
                 <br>
+                -->
+                <input type="text" value="" id="SendDMTwitterTextField" name="result">
+                <br>
+                <br>
                 <label for="email"><b>Comments: </b></label>
-                <textarea id="comment" name="comment" rows="4" cols="50">
+                <input type="text" value="" id="SendDMTwitterComment" name="comment" rows="4" cols="50">
+                <br>
+                <br>
+                <label for="email"><b>Test History: </b></label>
+                <textarea id="SendDMTwitterResult" name="comment" rows="10" cols="50">
                 </textarea>
                 <br>
-                <br>
                 <div>
-                  <button type="button" value="Submit" class="btn submit" onclick="submitLoginTwitterForm()">Submit</button>
+                  <button type="button" value="Submit" class="btn submit" onclick="submitSendDMTwitterForm()">Submit</button>
                   <button type="button" class="btn cancel" onclick="closeSendDMTwitterForm()">Close</button>
                 </div>
                 </form>
@@ -489,7 +553,32 @@
             }
             function closeLoginTwitterForm() {
             document.getElementById("loginTwitter").style.display = "none";
+            document.getElementById("loginTwitter").reset();
             }
+
+            function submitLoginTwitterForm() {
+              var loginTwitterResult = document.getElementById("loginTwitterTextField").value;
+              var loginTwitterComment = document.getElementById("loginTwitterComment").value;
+              const d = new Date();
+              if (loginTwitterResult == 'Passed' || loginTwitterResult == 'Failed') {
+                loginTwitterHistory = "Date: " + d + "\n" + "Result: " + loginTwitterResult + "\n" + "Comment: " + loginTwitterComment + "\n"  + "--------------------" + "\n" + loginTwitterHistory;
+                document.getElementById("loginTwitterResult").innerHTML = loginTwitterHistory;
+                <!--localStorage.setItem("loginInstagramResult", loginInstagramHistory);-->
+                window.localStorage.setItem('loginTwitterHistory', loginInstagramHistory);
+              }
+              else if (loginTwitterResult == 'Clear') {
+                window.localStorage.removeItem('loginTwitterHistory');
+              }
+            }
+            <!--var loginInstagramHistory = localStorage.loginInstagramHistory;-->
+            var loginTwitterHistory = window.localStorage.getItem('loginTwitterHistory');
+            <!--
+              Unused function
+            function chooseLoginInstagram(choice){
+              loginInstagramResult = choice;
+              return loginInstagramResult
+            }
+            -->
 
             <!--Logout Twitter-->
             function openLogoutTwitterForm() {
@@ -497,7 +586,35 @@
             }
             function closeLogoutTwitterForm() {
             document.getElementById("logoutTwitter").style.display = "none";
+            document.getElementById("logoutTwitter").reset();
             }
+
+            function submitLogoutTwitterForm() {
+              var logoutTwitterResult = document.getElementById("logoutTwitterTextField").value;
+              var logoutTwitterComment = document.getElementById("logoutTwitterComment").value;
+              const d = new Date();
+              if (logoutTwitterResult == 'Passed' || logoutTwitterResult == 'Failed') {
+                logoutTwitterHistory = "Date: " + d + "\n" + "Result: " + logoutTwitterResult + "\n" + "Comment: " + logoutTwitterComment + "\n"  + "--------------------" + "\n" + logoutTwitterHistory;
+                document.getElementById("logoutTwitterResult").innerHTML = logoutTwitterHistory;
+                <!--localStorage.setItem("loginInstagramResult", loginInstagramHistory);-->
+                window.localStorage.setItem('logoutTwitterHistory', logoutTwitterHistory);
+              }
+              else if (logoutTwitterResult == 'Clear') {
+                window.localStorage.removeItem('logoutTwitterHistory');
+              }
+            }
+            <!--var loginInstagramHistory = localStorage.loginInstagramHistory;-->
+            var logoutTwitterHistory = window.localStorage.getItem('logoutTwitterHistory');
+            <!--
+              Unused function
+            function chooseLoginInstagram(choice){
+              loginInstagramResult = choice;
+              return loginInstagramResult
+            }
+            -->
+
+           
+
 
             <!--Like post Twitter-->
             function openLikePostTwitterForm() {
@@ -505,7 +622,34 @@
             }
             function closeLikePostTwitterForm() {
             document.getElementById("likePostTwitter").style.display = "none";
+            document.getElementById("likePostTwitter").reset();
             }
+
+            function submitLikePostTwitterForm() {
+              var likePostTwitterResult = document.getElementById("likePostTwitterTextField").value;
+              var likePostTwitterComment = document.getElementById("likePostTwitterComment").value;
+              const d = new Date();
+              if (likePostTwitterResult == 'Passed' || likePostTwitterResult == 'Failed') {
+                likePostTwitterHistory = "Date: " + d + "\n" + "Result: " + likePostTwitterResult + "\n" + "Comment: " + likePostTwitterComment + "\n"  + "--------------------" + "\n" + likePostTwitterHistory;
+                document.getElementById("likePostTwitterResult").innerHTML = likePostTwitterHistory;
+                <!--localStorage.setItem("loginInstagramResult", loginInstagramHistory);-->
+                window.localStorage.setItem('likePostTwitterHistory', likePostTwitterHistory);
+              }
+              else if (likePostTwitterResult == 'Clear') {
+                window.localStorage.removeItem('likePostTwitterHistory');
+              }
+            }
+            <!--var loginInstagramHistory = localStorage.loginInstagramHistory;-->
+            var likePostTwitterHistory = window.localStorage.getItem('likePostTwitterHistory');
+            <!--
+              Unused function
+            function chooseLoginInstagram(choice){
+              loginInstagramResult = choice;
+              return loginInstagramResult
+            }
+            -->
+
+            
 
             <!--Sending yourself a DM Twitter-->
             function openSendDMTwitterForm() {
@@ -513,7 +657,34 @@
             }
             function closeSendDMTwitterForm() {
             document.getElementById("sendDMTwitter").style.display = "none";
+            document.getElementById("SendDMTwitter").reset();
             }
+
+            function submitSendDMTwitterForm() {
+              var SendDMTwitterResult = document.getElementById("SendDMTwitterTextField").value;
+              var SendDMTwitterComment = document.getElementById("SendDMTwitterComment").value;
+              const d = new Date();
+              if (SendDMTwitterResult == 'Passed' || SendDMTwitterResult == 'Failed') {
+                SendDMTwitterHistory = "Date: " + d + "\n" + "Result: " + SendDMTwitterResult + "\n" + "Comment: " + SendDMTwitterComment + "\n"  + "--------------------" + "\n" + SendDMTwitterHistory;
+                document.getElementById("SendDMTwitterResult").innerHTML = SendDMTwitterHistory;
+                <!--localStorage.setItem("loginInstagramResult", loginInstagramHistory);-->
+                window.localStorage.setItem('SendDMTwitterHistory', SendDMTwitterHistory);
+              }
+              else if (SendDMTwitterResult == 'Clear') {
+                window.localStorage.removeItem('SendDMTwitterHistory');
+              }
+            }
+            <!--var loginInstagramHistory = localStorage.loginInstagramHistory;-->
+            var SendDMTwitterHistory = window.localStorage.getItem('SendDMTwitterHistory');
+            <!--
+              Unused function
+            function chooseLoginInstagram(choice){
+              loginInstagramResult = choice;
+              return loginInstagramResult
+            }
+            -->
+
+
             <!--
             boolean result;
             var message;
