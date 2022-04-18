@@ -1,5 +1,5 @@
 <template>
-  <h1>Details</h1>
+  <h1><u>Details</u></h1>
   <form id="nav" class="about">
     <label for="fName">First Name: </label>
     <input type="text" value="Bob">
