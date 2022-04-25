@@ -149,7 +149,7 @@
                 <br>
                 <br>
                 <label for="email"><b>Test History: </b></label>
-                <textarea id="likePostInstagramResult" name="comment" rows="10"  disabled>
+                <textarea id="likePostInstagramResult" name="comment" rows="10" cols="50" disabled>
                 </textarea>
                 <br>
                 <div>
@@ -364,7 +364,7 @@
                 <br>
                 <br>
                 <label for="email"><b>Test History: </b></label>
-                <textarea id="likePostTwitterResult" name="comment" rows="10"  disabled>
+                <textarea id="likePostTwitterResult" name="comment" rows="10" cols="50" disabled>
                 </textarea>
                 <br>
                 <div>
@@ -422,7 +422,7 @@
                 <br>
                 <br>
                 <label for="email"><b>Test History: </b></label>
-                <textarea id="SendDMTwitterResult" name="comment" rows="10"  disabled>
+                <textarea id="SendDMTwitterResult" name="comment" rows="10" cols="50" disabled>
                 </textarea>
                 <br>
                 <div>
