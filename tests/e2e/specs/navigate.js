@@ -7,6 +7,7 @@ context('Actions', () => {
     })
      it('register', () => {
       // https://on.cypress.io/type
+      cy.pause();
       cy.get('button').eq(2)
         .click().wait(1000);
         cy.get('button').eq(3)

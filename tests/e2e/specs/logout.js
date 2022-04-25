@@ -6,6 +6,7 @@ context('Actions', () => {
     })
      it('logout', () => {
       // https://on.cypress.io/type
+      cy.pause();
       cy.get('button').last()
         .click();
     })
